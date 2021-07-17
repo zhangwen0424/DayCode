@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script> -->
+    <title>js函数防抖和截流</title>
+</head>
+<body>
+    <div id="app">
+        <p>打开开发者工具，多次点击按钮，看下打印结果</p>
+        
+        <!-- <button id="submit" v-on:click="debounce({{clickButton}},1000)">防抖提交按钮</button> -->
+        <button id="submit">防抖提交按钮</button>
+    </div>
+
+    <script>
+        document.getElementById('submit').addEventListener('click', debounce(submit, 1000));
+        function submit() {
+            console.log("我被提交了", new Date());
+        }
+        function debounce(fn,time=300) {
+            let timer;
+            return function() {
+                timer && clearTimeout(timer);
+                timer = setTimeout(() => {
+                    fn.apply(this);
+                    timer = null;
+                }, time);
+            }
+        }
+    </script>
+</body>
+</html>
