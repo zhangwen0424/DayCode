@@ -4,30 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script> -->
     <title>js函数防抖和截流</title>
+    <style>
+        .border{
+            width:100%;
+            height: 200px;
+            border: 1px solid red;
+            margin:50px 0px;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
         <p>打开开发者工具，多次点击按钮，看下打印结果</p>
-        
-        <!-- <button id="submit" v-on:click="debounce({{clickButton}},1000)">防抖提交按钮</button> -->
-        <button id="submit">防抖提交按钮</button>
+        <!-- <button id="submit" @click="debounce(clickButton,1000)">防抖提交按钮</button> -->
+        <!-- <button id="submit">防抖提交按钮</button>
+        <button id="submit1">节流提交按钮</button> -->
+        <div id="debounce" class="border">debounce</div>
+        <div id="throttle" class="border">throttle</div>
     </div>
 
     <script>
-        document.getElementById('submit').addEventListener('click', debounce(submit, 1000));
+        document.getElementById('debounce').addEventListener('mouseenter', debounce(submit, 1000));
+        document.getElementById('throttle').addEventListener('mouseenter', throttle(submit, 1000));
         function submit() {
-            console.log("我被提交了", new Date());
+            console.log(new Date());
         }
+        // 防抖
         function debounce(fn,time=300) {
             let timer;
-            return function() {
+            return function(){
                 timer && clearTimeout(timer);
-                timer = setTimeout(() => {
+                timer = setTimeout(function() {
                     fn.apply(this);
                     timer = null;
                 }, time);
+            }
+        }
+        // 节流
+        function throttle(fn,time=300) {
+            let flag;
+            return function(){
+                if(flag) return;
+                flag = setTimeout(function(){
+                    fn.apply(this);
+                    flag = null
+                },time);
             }
         }
     </script>
