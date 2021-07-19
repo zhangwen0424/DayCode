@@ -1,9 +1,23 @@
 /*
  * @Date: 2021-07-16 11:29:09
  * @LastEditors: zhangwen
- * @LastEditTime: 2021-07-16 14:14:41
- * @FilePath: /project/DayCode/utils/getDataType.js
+ * @LastEditTime: 2021-07-19 15:00:02
+ * @FilePath: /DayCode/utils/getDataType.js
  */
+
+/* 
+涉及到的一些点
+typeof
+    1.判断原始类型，除了null都可以正确判断，null会判断为object
+    2.判断引用类型，除了function都不能准确判断
+    3.可以判断未声明的变量，类型为undefined，其他判断未声明变量会报错Uncaught referenceError
+instanceof
+    1.判断引用类型，不可判断基本数据类型
+Object.prototype.toString.call()
+    1.可以判断所有类型
+    2.统一返回格式为 “[object Xxx]” 的字符串，其中 Xxx 就是对象的类型
+ */
+
 
 /**
  * javascript数据类型判断通用方法
@@ -41,16 +55,3 @@ console.log("9",getDataType(/\d/));
 8 undefined
 9 RegExp
 */
-
-/* 
-涉及到的一些点
-typeof
-    1.判断原始类型，除了null都可以正确判断，null会判断为object
-    2.判断引用类型，除了function都不能准确判断
-    3.可以判断未声明的变量，类型为undefined，其他判断未声明变量会报错Uncaught referenceError
-instanceof
-    1.判断引用类型，不可判断基本数据类型
-Object.prototype.toString.call()
-    1.可以判断所有类型
-    2.统一返回格式为 “[object Xxx]” 的字符串，其中 Xxx 就是对象的类型
- */
