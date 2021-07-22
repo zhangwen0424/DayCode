@@ -1,7 +1,7 @@
 <!--
  * @Date: 2021-07-16 11:24:37
  * @LastEditors: zhangwen
- * @LastEditTime: 2021-07-19 14:57:25
+ * @LastEditTime: 2021-07-22 16:08:31
  * @FilePath: /DayCode/README.md
 -->
 小白心学编程，每天进步一点点。。。
@@ -16,3 +16,4 @@
 
 - demos 使用小案例
     - [js函数防抖和节流demo](https://github.com/zhangwen0424/DayCode/blob/master/demos/js函数防抖和节流.html)
+    - [node-xlsx解析excel数据为json](https://github.com/zhangwen0424/DayCode/blob/master/demos/handleExcel/README.md)

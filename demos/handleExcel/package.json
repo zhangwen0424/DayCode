@@ -1,0 +1,16 @@
+{
+  "name": "handleexcel",
+  "version": "1.0.0",
+  "description": "node导出excel数据",
+  "main": "handle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lodash": "^4.17.21",
+    "node-xlsx": "^0.17.1",
+    "util": "^0.12.4"
+  }
+}
