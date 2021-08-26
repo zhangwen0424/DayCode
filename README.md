@@ -1,8 +1,8 @@
 <!--
  * @Date: 2021-07-16 11:24:37
  * @LastEditors: zhangwen
- * @LastEditTime: 2021-07-22 16:08:31
- * @FilePath: /DayCode/README.md
+ * @LastEditTime: 2021-08-26 10:05:03
+ * @FilePath: /project/DayCode/README.md
 -->
 小白心学编程，每天进步一点点。。。
 
@@ -15,5 +15,9 @@
     - [javascript浅拷贝和深拷贝](https://github.com/zhangwen0424/DayCode/blob/master/utils/clone.js)
 
 - demos 使用小案例
-    - [js函数防抖和节流demo](https://github.com/zhangwen0424/DayCode/blob/master/demos/js函数防抖和节流.html)
+    - Html5和CSS3
+    
+    - JavaScript
+        - [js函数防抖和节流demo](https://github.com/zhangwen0424/DayCode/blob/master/demos/js函数防抖和节流.html)
+    - Node
     - [node-xlsx解析excel数据为json](https://github.com/zhangwen0424/DayCode/blob/master/demos/handleExcel/README.md)

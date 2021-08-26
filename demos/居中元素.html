@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>居中元素</title>
+    <style>
+        /* 通用 */
+        .nav li {
+            cursor: pointer;
+        }
+        .nav li:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+        .item {
+            margin-left: 25px;
+        }
+        .parent {
+            border: 1px solid #000;
+            margin: 20px 0px;
+        }
+        .child {
+            border: 1px solid red;
+        }
+        .i {
+            color: gray; 
+        }
+        /* 行内父元素 */
+        .x_parent_inline {
+            text-align:center;
+        }
+        /* 块级子元素 */
+        .x_child_block_1 {
+            width: 120px; /* 确保该块级元素定宽 */
+            margin: 0 auto;
+            /* 设置下面属性居中子元素 */
+            /* text-align: center; */
+        }
+        .x_child_block_2 {
+            /* table在表现上类似block元素，但是宽度为内容宽 */
+            display: table; 
+            margin: 0 auto;
+        }
+        .x_parent_block_3 {
+            position:relative;
+        }
+        .x_child_block_3 {
+            position: absolute;
+            left: 50%;
+            /* 向x轴反方向平移一半 */
+            transform: translateX(-50%);
+            /* display:inline-block */
+        }
+        .x_parent_block_4 {
+            display: flex;
+            /* 定义了项目在主轴上的对齐方式 */
+            justify-content: center;
+        }
+        .x_parent_block_5 {
+            display: flex;
+        }
+        .x_child_block_5 {
+            margin:0 auto;
+        }
+        .x_parent_block_more_1 {
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>居中元素</h1>
+    <p>目录</p>
+    <ul class="nav">
+        <li href="#X_center">水平居中</li>
+            <ul>
+                <li href="#X_inline">行内元素</li>
+                <li>块级元素</li>
+                <li>多块级元素</li>
+                <li>浮动元素</li>
+                <li>绝对定位元素</li>
+            </ul>
+        <li>垂直居中</li>
+            <ul>
+                <li>单行内联元素</li>
+                <li>多行内联元素</li>
+                <li>块级元素</li>
+            </ul>
+        <li>水平垂直居中</li>
+    </ul>
+    <hr>
+    
+    <!-- 水平居中 -->
+    <h2 id="X_center">水平居中</h2>
+    <div id="X_container">
+        <!-- 行内元素 -->
+        <li>
+            <strong>行内元素:</strong>
+            <span class="i">在父容器设置text-align:center</span>
+        </li>
+        <div class="item">
+            <div class="parent x_parent_inline">
+                <span class="child">行内子元素</span>
+            </div>
+        </div>
+
+        <!-- 块级元素 -->
+        <li>
+            <strong>块级元素</strong>
+        </li>
+        <div class="item">
+            <p>方法1:
+            <span class="i">在子容器设置margin:0 auto，同时确保该子容器固定宽度（只居中子容器，不居中子元素）</span>
+            </p>
+            <div class="parent">
+                <div class="child x_child_block_1">块级子元素</div>
+            </div>
+            <p>方法2:
+            <span class="i">在子容器设置margin: 0 auto; display:table(table类似block元素但宽度为内容宽)</span>
+            </p>
+            <div class="parent">
+                <div class="child x_child_block_2">块级子元素</div>
+            </div>
+            <p>方法3:
+                <span class="i">先将父元素设置为相对定位，再将子元素设置为绝对定位，向右移动子元素，移动距离为父容器的一半，最后通过向左移动子元素的一半宽度以达到水平居中。transform属于css3内容，兼容性存在一定问题，高版本浏览器需要添加一些前缀</span>
+            </p>
+            <div class="parent x_parent_block_3">
+                <div class="child x_child_block_3">块级子元素</div>
+            </div>
+            <p>方法4:
+                <span class="i">通过CSS3中的布局利器flex中的justify-content属性来达到水平居中</span>
+            </p>
+            <div class="parent x_parent_block_4">
+                <div class="child">块级子元素</div>
+            </div>
+            <p>方法5:
+                <span class="i">父元素flex布局，子元素居中</span>
+            </p>
+            <div class="parent x_parent_block_5">
+                <div class="child x_child_block_5">块级子元素</div>
+            </div>
+
+        </div>
+
+        <!-- 多块级元素水平居中 -->
+        <li>
+            <strong>块级元素</strong>
+            <span class="i">在父容器设置display: flex;justify-content: center;等同于子元素设置display:inlin-block,父容器设置text-align:center</span>
+        </li>
+        <div class="item">
+            <div class="parent x_parent_block_more_1">
+                <div class="child">子元素</div>
+                <div class="child">子元素</div>
+                <div class="child">子元素</div>
+            </div>
+        </div>
+
+        <!-- 浮动元素水平居中 -->
+
+
+
+    </div>
+</body>
+</html>
