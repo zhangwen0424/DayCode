@@ -27,6 +27,9 @@
         .i {
             color: gray; 
         }
+        hr {
+            border-color: rgb(50, 205, 166);
+        }
         /* 行内父元素 */
         .x_parent_inline {
             text-align:center;
@@ -45,6 +48,7 @@
         }
         .x_parent_block_3 {
             position:relative;
+            height: 24px;
         }
         .x_child_block_3 {
             position: absolute;
@@ -67,6 +71,63 @@
         .x_parent_block_more_1 {
             display: flex;
             justify-content: center;
+        }
+        .x_parent_float_1 {
+            overflow: hidden;
+        }
+        .x_child_float_1 {
+            float: left;
+            width: 120px;
+            position: relative;
+            left: 50%;
+            margin-left: -60px;
+        }
+        .x_parent_float_2 {
+            float: left;
+            position: relative;
+            left: 50%;
+        }
+        .x_child_float_2 {
+            float: left;
+            position: relative;
+            right: 50%;
+        }
+        .x_parent_float_3 {
+            display: flex; 
+            justify-content: center;
+        }
+        .x_child_float_3 {
+            float:left;
+            width:120px;
+        }
+        .x_parent_absolute {
+            position: relative;
+        }
+        .x_child_absolute {
+            position: absolute;
+            width:120px;
+            left:0;
+            right:0;
+            margin:0 auto;
+        }
+
+        .y_parent_inline {
+            height: 40px;
+            line-height: 40px;
+        }
+        .y_parent_inline_more_1 {
+            height: 40px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .y_parent_inline_more_2 {
+            display: table;
+            height: 40px;
+        }
+        .y_child_inline_more_2 {
+            display: table-cell;
+            vertical-align: middle;
         }
 
     </style>
@@ -147,7 +208,7 @@
 
         <!-- 多块级元素水平居中 -->
         <li>
-            <strong>块级元素</strong>
+            <strong>多块级元素</strong>
             <span class="i">在父容器设置display: flex;justify-content: center;等同于子元素设置display:inlin-block,父容器设置text-align:center</span>
         </li>
         <div class="item">
@@ -159,9 +220,76 @@
         </div>
 
         <!-- 浮动元素水平居中 -->
+        <li>
+            <strong>浮动元素水平居中</strong>
+        </li>
+        <div class="item">
+            <p>方法1:
+            <span class="i">定宽浮动元素，子元素设置relative + 负margin</span>
+            </p>
+            <div class="parent x_parent_float_1">
+                <div class="child x_child_float_1">定宽浮动元素</div>
+            </div>
+            <p>方法2:
+            <span class="i">不定宽浮动元素，通过父子容器都相对定位，偏移位移</span>
+            </p>
+            <div class="parent x_parent_float_2">
+                <div class="child x_child_float_2"> 不定宽浮动元素</div>
+            </div>
+            <p style="margin-top: 90px;">方法3:
+            <span class="i">利用弹性布局</span>
+            </p>
+            <div class="parent x_parent_float_3">
+                <span class="child x_child_float_3">子元素</span>
+            </div>
+        </div>
 
+        <!-- 绝对元素水平居中 -->
+        <li>
+            <strong>绝对元素水平居中</strong>
+        </li>
+        <div class="parent x_parent_absolute">
+            <div class="child x_child_absolute">子元素</div>
+        </div>
 
 
     </div>
+    <hr style="margin-top:50px"/>
+
+    <!-- 垂直居中 -->
+    <h2 id="Y_center">垂直居中</h2>
+    <div id="Y_container">
+        <li>
+            <strong>单行内联元素</strong>
+            <span class="i">父容器设置，line-height=width</span>
+        </li>
+        <div class="parent y_parent_inline">
+            <span class='child'>子元素</span>
+        </div>
+        <li>
+            <strong>多行内联元素</strong>
+        </li>
+        <div class="item">
+            <p>方法1：
+                <span class="i">利用 flex 布局，justify-content: center;flex-direction: column(定义主轴方向为纵向)</span>
+            </p>
+            <div class="parent y_parent_inline_more_1">
+                <span class="child">子元素</span>
+            </div>
+            <p>方法2：
+                <span class="i">父元素设置 dispaly:table;子元素设置 display:table-cell;vertical-align:middle</span>
+            </p>
+            <div class="parent y_parent_inline_more_2">
+                <div class="child y_child_inline_more_2">子元素</div>
+            </div>
+        </div>
+        <li>
+            <strong>块级元素垂直居中</strong>
+        </li>
+        <div class="item">
+
+        </div>
+    </div>
+
 </body>
 </html>
