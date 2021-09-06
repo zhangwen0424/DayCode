@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圣杯布局</title>
+    <style>
+        .grail-layout-x {
+            border: 1px solid #000;
+        }
+        .left {
+            border:1px solid yellow;
+        }
+        .center {
+            border:1px solid red;
+        }
+        .right {
+            border: 1px solid blue;
+        }
+
+        /* 圣杯布局float + margin-left/right + padding-left/right */
+        .grail-layout-x {
+            height: 400px;
+            width: calc(100vw - 100px);
+            padding:0 50px;
+        }
+        .center {
+            float:left;
+            width: 100%;
+            height: 100%;
+        }
+        .left {
+            float:left;
+            width: 50px;
+            height: 100%;
+            margin-left: -100%;
+            position: relative;
+            left: -50px;
+        }
+        .right {
+            float: left;
+            width: 50px;
+            height: 100%;
+            margin-right: -100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grail-layout-x">
+        <div class="center"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三列布局.html</title>
+    <style>
+        .three-column-layout {
+            border:1px solid #000;
+        }
+        .left {
+            border:1px solid red;
+        }
+        .center {
+            border:1px solid green;
+        }
+        .right {
+            border: 1px solid blue;
+        }
+
+        /* 方法1: overflow + float */
+        .three-column-layout {
+            width: 100%;
+            height: 100vh;
+        }
+        .left {
+            float: left;
+            width: 50px;
+            height: 100%;
+        }
+        .center {
+            float: left;
+            width:80px;
+            height: 100%;
+        }
+        .right {
+            overflow: hidden;
+            height: 100%;
+        }
+
+        /* 方法2: flex */
+        /* .three-column-layout {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+        .left {
+            width:50px;
+            height: 100%;
+        }
+        .center {
+            width:80px;
+            height: 100%;
+        }
+        .right {
+            flex:1;
+            height: 100%;
+        } */
+    </style>
+</head>
+<body>
+    <div class="three-column-layout">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
