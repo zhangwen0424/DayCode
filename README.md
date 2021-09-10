@@ -1,8 +1,8 @@
 <!--
  * @Date: 2021-07-16 11:24:37
  * @LastEditors: zhangwen
- * @LastEditTime: 2021-09-06 13:24:12
- * @FilePath: /DayCode/README.md
+ * @LastEditTime: 2021-09-10 11:11:17
+ * @FilePath: /project/DayCode/README.md
 -->
 小白心学编程，每天进步一点点。。。
 
@@ -23,5 +23,6 @@
         - [三角形绘制](https://github.com/zhangwen0424/DayCode/blob/master/demos/html和css/三角形绘制.html)
     - JavaScript
         - [js函数防抖和节流demo](https://github.com/zhangwen0424/DayCode/blob/master/demos/js/js函数防抖和节流.html)
+        - [js数组去重复](https://github.com/zhangwen0424/DayCode/blob/master/DayCode/demos/js/js数组去重复.html)
     - Node
         - [node-xlsx解析excel数据为json](https://github.com/zhangwen0424/DayCode/blob/master/demos/handleExcel/README.md)

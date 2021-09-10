@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js数组去重复.html</title>
+  </head>
+
+  <body>
+    <script>
+      /*
+       *  使用indexOf
+       *  Array.from
+       *  使用ES6中的Set
+       */
+      
+      
+      let fns = {
+          // 数组判断
+          is_arr: function (arr) {
+              if (!Array.isArray(arr)) {
+                  console.log("不是数组！")
+                  return false;
+              }
+              return true;
+          },
+          //使用indexOf
+          use_indexof: function (arr) {
+              if (!this.is_arr(arr)) {
+                  return false;
+              }
+
+              let temp = [];
+              for (let i = 0; i < arr.length; i++) {
+                  if (temp.indexOf(arr[i]) == -1) {
+                      temp.push(arr[i]);
+                  }
+              }
+              return temp;
+          },
+          // Array.from
+          use_arrayfrom: function(arr) {
+              if (!this.is_arr(arr)) {
+                  return false;
+              }
+              let temp = [];
+              temp = Array.from(new Set(arr));
+              return temp;
+          },
+          // 使用ES6中的Set
+          use_set: function(arr) {
+              if (!this.is_arr(arr)) {
+                  return false;
+              }
+              let temp = [...new Set(arr)];
+              return temp;
+          }
+      }
+
+      var arr = ["mornki", "mornki", '哈哈', 1, 3, 2, 'mornki', null, undefined, null, '2', 'a', 'ab', 2, {}, undefined,
+          null,
+          function () {}
+      ];
+      console.log("使用indexOf:", fns.use_indexof(arr));
+      console.log("Array.from:", fns.use_arrayfrom(arr));
+      console.log("Set:", fns.use_set(arr));
+
+    </script>
+  </body>
+</html>
