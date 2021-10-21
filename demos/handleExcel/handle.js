@@ -1,7 +1,7 @@
 /*
  * @Date: 2021-07-22 10:48:37
  * @LastEditors: zhangwen
- * @LastEditTime: 2021-10-21 14:28:45
+ * @LastEditTime: 2021-10-21 16:06:02
  * @FilePath: /DayCode/demos/handleExcel/handle.js
  */
 
@@ -88,11 +88,18 @@ var handleXlsx1 = async function() {
     await fnCommon.writeFile("data.text", excel_data);
     excel_data = JSON.parse(excel_data);
     excel_data.shift();
+    console.log("excel_data",excel_data)
     let obj = excel_data.reduce(function(c,n,s) {
-        n.jobgrade_code ? c['EmployeeCategoryCode'][n.jobgrade_code] = n.jobgrade_name : '';
-        n.jobgrade_code ? c["JobCode"][n.jobgrade_code] = n.jobgrade_name : '';
+        n.jobgrade_code ? c['JobCode'].push({
+            code: n.jobgrade_code,
+            name: n.jobgrade_name,
+        }) : "";
+        n.type ? c["EmployeeCategoryCode"].push({
+            code: n.type,
+            name: n.type_name,
+        }) : "";
         return c;
-    }, {"EmployeeCategoryCode":{}, "JobCode":{}});
+    }, {"EmployeeCategoryCode":[], "JobCode":[]});
     console.log("解析成功！",JSON.stringify(obj));
 }
 handleXlsx1()
