@@ -1,7 +1,7 @@
 /*
  * @Date: 2021-07-22 10:48:37
  * @LastEditors: zhangwen
- * @LastEditTime: 2021-10-21 16:06:02
+ * @LastEditTime: 2021-11-17 16:20:27
  * @FilePath: /DayCode/demos/handleExcel/handle.js
  */
 
@@ -11,6 +11,7 @@
 
 // 所需要的node包
 const fs = require("fs");
+const { isEmpty } = require("lodash");
 const xlsx = require("node-xlsx");
 const util = require("util");
 
@@ -18,33 +19,33 @@ let fnCommon = {
     /**
      * 解析excel数据并返回
      * @param {excel地址} path 
-    //  * @param {列名} rowName 
-    //  * @param {需要获取哪个sheet页数据，不传默认返回第一个} sheetName 
+     * @param {列名} rowName 
+     * @param {需要获取哪个sheet页数据，不传默认返回第一个} sheetName 
      */
     readXlsx: async function(p) {
-        let path=p.path, rowName=p.rowName, sheetName=p.sheetName, format=p.format;
+        let path=p.path, sheetName=p.sheetName, format=p.format;
         let excel_path = __dirname+path;
         let data = await xlsx.parse(fs.readFileSync(excel_path));
-            let sheet_datas = data.map(function(x) {
-            x.data = x.data.map(function(v,k) {
+        // console.log("data",JSON.stringify(data))
+        let sheet_datas = data.reduce(function(current, x,index) {
+            x.data = x.data ? x.data : [];
+            let currentRowName = [...new Array(x.data[0].length).keys()];
+            let arr = x.data.reduce(function(c,v,k) {
+                if(!v.length || !k) return c;
                 let obj = {};
-                rowName.forEach(function(y, i) {
-                    y ? obj[y] = v[i]||'' : '';
+                currentRowName.forEach(function(y, i) {
+                    obj[y] = v[i]||'';
                 });
-                return obj;
-            })
-            return x;
-        });
-        if(sheetName) {
-            let f = sheet_datas.find(function(f) {
-                return f.name == sheetName;
-            });
-            f ? sheet_datas = f.data : "";
-        } else {
-            sheet_datas = sheet_datas[0].data;
-        }
-        sheet_datas = format ? util.inspect(sheet_datas, false, 6) : JSON.stringify(sheet_datas);
-        return JSON.stringify(eval("("+sheet_datas+")"));
+                c.push(obj)
+                return c;
+            }, []);
+            current[x.name] = arr;
+            return current;
+        }, {});
+        // sheet_datas = format ? util.inspect(sheet_datas, false, 6) : JSON.stringify(sheet_datas);
+        // console.log("sheet_datas",sheet_datas)
+        // return JSON.stringify(eval("("+sheet_datas+")"));
+        return JSON.stringify(sheet_datas);
     },
     /**
      * 写数据到指定文件中
@@ -102,4 +103,29 @@ var handleXlsx1 = async function() {
     }, {"EmployeeCategoryCode":[], "JobCode":[]});
     console.log("解析成功！",JSON.stringify(obj));
 }
-handleXlsx1()
+// handleXlsx1()
+
+
+var handleXlsx2 = async function() {
+    let excel_data = await fnCommon.readXlsx({
+        path: '/十院自定义字段.xlsx',
+        format:true,
+    });
+    await fnCommon.writeFile("data.text", excel_data);
+    excel_data = JSON.parse(JSON.stringify(excel_data));
+    console.log("excel_data",excel_data)
+    // let obj = excel_data.reduce(function(c,n,s) {
+    //     n.jobgrade_code ? c['JobCode'].push({
+    //         code: n.jobgrade_code,
+    //         name: n.jobgrade_name,
+    //     }) : "";
+    //     n.type ? c["EmployeeCategoryCode"].push({
+    //         code: n.type,
+    //         name: n.type_name,
+    //     }) : "";
+    //     return c;
+    // }, {"EmployeeCategoryCode":[], "JobCode":[]});
+    // console.log("解析成功！",JSON.stringify(obj));
+}
+handleXlsx2()
+
