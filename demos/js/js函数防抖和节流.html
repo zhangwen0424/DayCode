@@ -43,7 +43,7 @@
             }
         }
         // 节流
-        function throttle(fn,time=300) {
+        /* function throttle(fn,time=300) {
             let flag;
             return function(){
                 if(flag) return;
@@ -51,6 +51,16 @@
                     fn.apply(this);
                     flag = null
                 },time);
+            }
+        } */
+        function throttle(fn, wait=1000){
+            let start = 0;
+            return function(){
+                let now = new Date();
+                if(now - start >= wait){
+                    fn.apply(this);
+                    start = now;
+                }
             }
         }
     </script>
