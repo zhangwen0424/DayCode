@@ -1,0 +1,48 @@
+<!--
+ * @Date: 2021-12-03 14:38:58
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2021-12-03 15:15:35
+ * @FilePath: /DayCode/demos/html和css/绝对定位布局.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 
+      绝对定位水平和垂直都必须满足：
+          left + margin-left + border-left + padding-left + width + padding-right + border-right + margin-right + right = 包含块的内容区的宽度
+          top + margin-top/bottom + padding-top/bottom + border-top/bottom + height = 包含块的高度
+      过渡约束也会自动调整，利用这点可以设置绝对定位元素居中
+        left:0px; right:0px; top:0px; right:0px; margin:auto;
+     */
+    .outer {
+      width: 100px;
+      height: 200px;
+      background: red;
+      position: relative;
+    }
+    .inner {
+      width: 50px;
+      height: 50px;
+      background: yellow;
+      position: absolute;
+      /* padding:0px;
+      margin:0px; */
+      margin:auto;
+      left:0px;
+      right: 0px;
+      top:0px;
+      bottom:0px;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class='inner'></div>
+  </div>
+</body>
+</html>

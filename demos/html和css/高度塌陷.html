@@ -1,0 +1,65 @@
+<!--
+ * @Date: 2021-12-03 14:02:22
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2021-12-03 14:18:16
+ * @FilePath: /DayCode/demos/test/css/高度塌陷.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 
+      问题：子元素设置浮动，父元素高度塌陷
+      解决：
+          对塌陷元素：
+            height: 300px
+            float:left/right
+            display: inline-block
+            overflow: hidden/auto/scroll
+            增加一个子元素,并设置clear:both
+            .clearfix(最佳方案)
+              .clearfix::before,
+              .clearfix::after {
+                  content: '';
+                  display: table;
+                  clear: both;
+              }
+     */
+    .outer {
+      /* width: 200px; */
+      /* height: 250px; */
+      background: red;
+      /* float: left; */
+      /* display: inline-block; */
+      /* overflow: hidden; */
+    }
+    .inner {
+      width:100px;
+      height: 100px;
+      background: yellow;
+      float: left;
+    }
+    .clear {
+      clear:both
+    }
+    .clearfix::before,
+    .clearfix::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="outer clearfix">
+    <div class="inner"></div>
+    <!-- <div class="clear"></div> -->
+  </div>
+  
+</body>
+</html>

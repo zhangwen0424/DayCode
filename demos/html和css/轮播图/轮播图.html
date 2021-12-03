@@ -1,0 +1,113 @@
+<!--
+ * @Date: 2021-12-03 15:29:13
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2021-12-03 17:10:37
+ * @FilePath: /DayCode/demos/html和css/轮播图/轮播图.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/reset.css">
+  <title>Document</title>
+  <style>
+    /* * {
+      margin:0px;
+      list-style: none;
+    } */
+    .img-list {
+      width: 590px;
+      height: 470px;
+      margin: 100px auto;
+      position: relative;
+    }
+    .img-list li {
+      position: absolute;
+    }
+    .img-list li:nth-child(4){
+      z-index: 1;
+    }
+    /* 设置导航点的样式 */
+    .pointer {
+      position:absolute;
+      z-index: 9999;
+      bottom: 20px;
+      left: 40px;
+    }
+    .pointer a {
+      float: left;
+      width: 10px;
+      height: 10px;
+      margin: 0 2px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, .3);
+      /* 将背景颜色值设置到内容区，边框和内边距不在有背景颜色 */
+      background-clip: content-box;
+      border: 2px solid transparent;
+    }
+    .pointer a.active,
+    .pointer a:hover {
+      background-color: #fff;
+      border: 2px solid  rgba(255, 255, 255, .3);
+    }
+  </style>
+</head>
+<body>
+  <ul class="img-list">
+    <li>
+      <a href="javascript:;">
+        <img src="image/1.jpg" alt="图片">
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;">
+        <img src="image/2.jpg" alt="图片">
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;">
+        <img src="image/3.jpg" alt="图片">
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;">
+        <img src="image/4.jpg" alt="图片">
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;">
+        <img src="image/5.jpg" alt="图片">
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;">
+        <img src="image/6.jpg" alt="图片">
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;">
+        <img src="image/7.jpg" alt="图片">
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;">
+        <img src="image/8.jpg" alt="图片">
+      </a>
+    </li>
+
+    <div class="pointer">
+      <a href="javascript:;" class="active"></a>
+      <a href="javascript:;"></a>
+      <a href="javascript:;"></a>
+      <a href="javascript:;"></a>
+      <a href="javascript:;"></a>
+      <a href="javascript:;"></a>
+      <a href="javascript:;"></a>
+      <a href="javascript:;"></a>
+    </div>
+  </ul>
+  
+</body>
+</html>
