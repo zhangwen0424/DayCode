@@ -1,7 +1,7 @@
 <!--
  * @Date: 2021-07-16 11:24:37
  * @LastEditors: zhangwen
- * @LastEditTime: 2021-12-03 14:33:10
+ * @LastEditTime: 2021-12-03 17:13:30
  * @FilePath: /DayCode/README.md
 -->
 小白心学编程，每天进步一点点。。。
@@ -25,6 +25,7 @@
         - [双飞翼布局](https://github.com/zhangwen0424/DayCode/blob/master/demos/html和css/html和css布局/双飞翼布局.html)
         - [三角形绘制](https://github.com/zhangwen0424/DayCode/blob/master/demos/html和css/三角形绘制.html)
         - [高度塌陷](https://github.com/zhangwen0424/DayCode/blob/master/demos/html和css/高度塌陷.html)
+        - [轮播图](https://github.com/zhangwen0424/DayCode/blob/master/demos/html和css/轮播图/轮播图.html)
     - JavaScript
         - [js函数防抖和节流demo](https://github.com/zhangwen0424/DayCode/blob/master/demos/js/js函数防抖和节流.html)
         - [js数组去重复](https://github.com/zhangwen0424/DayCode/blob/master/DayCode/demos/js/js数组去重复.html)
