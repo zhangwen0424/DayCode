@@ -1,7 +1,7 @@
 <!--
  * @Date: 2021-07-16 11:24:37
  * @LastEditors: zhangwen
- * @LastEditTime: 2021-11-30 17:27:58
+ * @LastEditTime: 2021-12-03 11:19:26
  * @FilePath: /DayCode/README.md
 -->
 小白心学编程，每天进步一点点。。。
@@ -15,6 +15,9 @@
     - [javascript浅拷贝和深拷贝](https://github.com/zhangwen0424/DayCode/blob/master/utils/clone.js)
 
 - demos 使用小案例
+    - css
+        - [reset.css 直接去除了浏览器的默认样式](https://github.com/zhangwen0424/DayCode/blob/master/demos/html和css/css/reset.css)
+        - [normalize.css 对默认样式进行了统一](https://github.com/zhangwen0424/DayCode/blob/master/demos/html和css/css/normalize.css)
     - Html5和CSS3
         - [html元素居中](https://github.com/zhangwen0424/DayCode/blob/master/demos/html和css/居中元素.html)
         - [html和css布局](https://github.com/zhangwen0424/DayCode/blob/master/demos/html和css/html和css布局)
