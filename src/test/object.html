@@ -1,0 +1,43 @@
+<!--
+ * @Date: 2021-12-14 14:55:30
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2021-12-14 15:19:24
+ * @FilePath: /DayCode/src/test/object.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../object.js"></script>
+</head>
+<body>
+  <script>
+    function Person(name, age) {
+      this.name = name;
+      this.age = age;
+      return this;
+    }
+    let obj = myInstance(Person, 'mornki', '25');
+    console.log(obj);
+    console.log(myInstanceOf(obj, Person))
+    console.log(myInstanceOf(obj, Object))
+    console.log(myInstanceOf(obj, Function))
+    console.log(myInstanceOf(Person, Function))
+
+    const object = {
+            a: [{ x: 2 }, { y: 4 }],
+            b: 1,
+            c: 'bar'
+        }
+        const other = {
+            a: { z: 3 },
+            b: [2, 3],
+            c: 'foo'
+        }
+        console.log(mergeObject(object, other)) 
+  </script>
+</body>
+</html>

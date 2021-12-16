@@ -1,0 +1,32 @@
+<!--
+ * @Date: 2021-12-14 13:06:09
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2021-12-14 13:18:40
+ * @FilePath: /DayCode/src/test/eventbus.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../eventbus.js"></script>
+</head>
+<body>
+  <script>
+    eventBus.on('pay', function(data){
+      console.log("pay1",data)
+    })
+    eventBus.on('pay', function(data){
+      console.log("pay2",data)
+    });
+    eventBus.on('cancel', function(data){
+      console.log("cancel",data)
+    })
+    eventBus.emit("cancel", 1)
+    eventBus.off('pay')
+    console.log("eventBus", eventBus)
+  </script>
+</body>
+</html>

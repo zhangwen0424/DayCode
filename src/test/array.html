@@ -1,0 +1,103 @@
+<!--
+ * @Date: 2021-12-13 11:44:30
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2021-12-14 11:45:46
+ * @FilePath: /DayCode/src/test/array.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../array.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // map
+    /* let arr = [12,3,4,1];
+    let result = map(arr, function(v,i){
+      return v*10;
+    }); */
+
+    // reduce
+    /* let arr = [1,2,3,1,4];
+    let result = reduce(arr, function(c,n,index){
+      c = c+n;
+      return c;
+    }, 10) */
+
+    // filter
+    /* let arr = [2,3,4,1,6];
+    let result = filter(arr, function(v,i){
+      return v>3;
+    }) */
+
+    // find
+    /* let arr = [2,3,4,1,6];
+    let result = find(arr, function(v,i){
+      return v>1;
+    }) */
+
+    // findIndex
+    /* let arr = [2,3,4,1,6];
+    let result = findIndex(arr, function(v,i){
+      return v>4;
+    }) */
+
+    // every
+    /* let arr = [2,3,4,1,6];
+    let result = every(arr, function(v,i){
+      return v<3;
+    }) */
+
+    // some
+    /* let arr = [2,3,4,1,6];
+    let result = some(arr, function(v,i){
+      return v<1
+    }) */
+
+    // uniq
+    /* let arr = [2,2,3,4,1,6,2,4,1, null, null, undefined,undefined,function(){}, function(){}];
+    let result = uniq3(arr); */
+
+
+    // concat
+    /* let arr = [2,3,4,1,6];
+    let result = arr.concat([12,23],2,3,[[2],1]); */
+
+    // slice
+    /* let arr = [2,3,4,1,6];
+    // let result = slice(arr, 0,2);
+    let result = slice(arr,2,1); */
+
+    // flatten
+    /* let arr = [1,2,[3,[2],[12,3,[2, [10]]]]]
+    let result = flatten1(arr); */
+
+    // chunk
+    // let arr = [2,3,4,1,6];
+    // let result = chunk(arr,2);
+
+    // difference
+    /* let arr1 = [1,2,3,10,9];
+    let result = difference(arr1, [2,3,1,2,5,3]) */
+
+    // pull
+    /* let arr = [1,2,4,1,2,8,5];
+    let result = pull(arr, 2,4,3,5);
+    // let result = pullAll(arr, [2,4,3,5]);
+    console.log(arr) */
+
+    // drop
+    let arr = [1,2,3,4,1,3,6]
+    // let result = drop(arr, 2);
+    let result = dropRight(arr, 2);
+
+
+    console.log(result)
+
+  </script>
+</body>
+</html>

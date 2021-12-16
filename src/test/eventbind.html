@@ -1,0 +1,29 @@
+<!--
+ * @Date: 2021-12-14 12:57:50
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2021-12-14 13:02:53
+ * @FilePath: /DayCode/src/test/eventbind.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../eventbind.js"></script>
+</head>
+<body>
+  <ul>
+    <li>1111</li>
+    <li>2222</li>
+    <li>3333</li>
+    <div>444</div>
+  </ul>
+  <script>
+    addEventListener("ul", 'click', function(e){
+      console.log(this.innerHTML);
+    }, 'li')
+  </script>
+</body>
+</html>

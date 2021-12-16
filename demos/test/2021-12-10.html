@@ -1,0 +1,56 @@
+<!--
+ * @Date: 2021-12-10 15:21:27
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2021-12-10 16:00:15
+ * @FilePath: /DayCode/demos/test/2021-12-10.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>复习</title>
+</head>
+<body>
+  <button id="btn1">防抖按钮</button>
+  <button id="btn2">节流按钮</button>
+  <script>
+    document.querySelector('#btn1').addEventListener('click', debounce(function(){
+      console.log(new Date());
+    }))
+    document.querySelector('#btn2').addEventListener('click', throttle(function(){
+      console.log(new Date());
+    }))
+
+    // 防抖
+    function debounce(fn, time=500) {
+      let timer;
+      return function(){
+        timer && clearTimeout(timer);
+        timer = setTimeout(function(){
+          fn.apply(this);
+          timer = null;
+        }, time)
+      }
+    }
+    // 节流
+    function throttle(fn, time=500){
+      let start = 0;
+      let timer;
+      return function(){
+        let now = new Date();
+        if(now-start >= time) {
+          timer = setTimeout(function(){
+            fn.apply(this);
+            start = now;
+            timer = null;
+          })
+        }
+      }
+    }
+
+
+  </script>
+</body>
+</html>

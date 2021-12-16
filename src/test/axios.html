@@ -1,0 +1,41 @@
+<!--
+ * @Date: 2021-12-14 12:29:59
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2021-12-14 12:51:37
+ * @FilePath: /DayCode/src/test/axios.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../axios.js"></script>
+</head>
+<body>
+  <script>
+    /* axios({
+      // url: 'https://www.showapi.com/apiGateway/generateSignUrl?showapi_apiCode=1211',
+      url: 'http://127.0.0.1:5501/src/test/axios.html',
+      method: 'get',
+      data: {
+        name: '1'
+      },
+      params: {
+        showapi_apiCode: 1211
+      }
+    }).then(function(data){
+      console.log('data',data);
+    }).catch(function(e){
+      console.log('e',e);
+    }) */
+
+    axios.get('http://127.0.0.1:5501/src/test/axios.html', {
+      name:1
+    }).then(function(data){
+      console.log('data',data)
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!--
+ * @Date: 2021-12-13 13:42:44
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2021-12-14 11:51:03
+ * @FilePath: /DayCode/src/test/function.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../function.js"></script>
+</head>
+<body>
+  <button id='debounce'>防抖</button>
+  <button id='throttle'>节流</button>
+  <script>
+    let c = 1234;
+    let obj = {
+      c: 2345,
+    }
+    function add(a,b){
+      return a+b+this.c;
+    }
+    console.log(call(add, obj,10,20))
+    console.log(apply(add, obj,[10,20]))
+    let b = bind(add,obj,10);
+    console.log(obj,b);
+    console.log(b(20,30))
+
+
+    document.querySelector('#debounce').addEventListener('click', debounce(function(e){
+      console.log(new Date(), e);
+    }, 1000))
+    document.querySelector('#throttle').addEventListener('click', throttle(function(e){
+      console.log(new Date(), e);
+    }))
+
+  </script>
+</body>
+</html>

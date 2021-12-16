@@ -1,0 +1,20 @@
+{
+  "name": "DayCode",
+  "version": "1.0.0",
+  "description": "<!--  * @Date: 2021-07-16 11:24:37  * @LastEditors: zhangwen  * @LastEditTime: 2021-12-14 12:57:18  * @FilePath: /DayCode/README.md --> 小白心学编程，每天进步一点点。。。",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangwen0424/DayCode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangwen0424/DayCode/issues"
+  },
+  "homepage": "https://github.com/zhangwen0424/DayCode#readme"
+}

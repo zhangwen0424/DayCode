@@ -1,0 +1,54 @@
+<!--
+ * @Date: 2021-12-13 11:00:19
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2021-12-13 11:17:49
+ * @FilePath: /DayCode/demos/test/2021-12-13.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="debounce">防抖</button>
+  <button id="throttle">节流</button>
+  <script>
+    document.querySelector('#debounce').addEventListener('click', debounce(function(){
+      console.log(new Date);
+    }));
+    document.querySelector('#throttle').addEventListener('click', throttle(function() {
+      console.log(new Date())
+    }))
+
+    function debounce(fn,time=1000){
+      let timer;
+      return function(){
+        timer && clearTimeout(timer);
+        timer = setTimeout(function(){
+          fn.apply(this);
+          timer = null;
+        }, time);
+      }
+    }
+    function throttle(fn, time=1000){
+      let start = 0;
+      let timer;
+      return function(){
+        let now = new Date();
+        if(now-start>=time){
+          timer = setTimeout(function(){
+            fn.apply(this);
+            start = now;
+            timer = null;
+          }, time);
+        }
+      }
+    }
+
+
+  </script>
+</body>
+</html>

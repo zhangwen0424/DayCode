@@ -61,6 +61,12 @@
                     fn.apply(this);
                     start = now;
                 }
+                if(now-start >= time) {
+                    timer = setTimeout(function(){
+                        fn.apply(this);
+                        start = now;
+                    })
+                }
             }
         }
     </script>
