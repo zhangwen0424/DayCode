@@ -1,0 +1,98 @@
+<!--
+ * @Date: 2021-12-16 17:28:37
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2021-12-20 16:44:22
+ * @FilePath: /DayCode/LeetCode/14.最长公共前缀.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>14. 最长公共前缀.html</title>
+  <style>
+    body {
+      padding: 20px;
+    }
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+    }
+    #html {
+      display: flex;
+      justify-content: center;
+    }
+    #html div {
+      display: inline-block;
+      width: 49%;
+      border-radius: 1%;
+      padding: 0px 20px ;
+    }
+    .bg_grey {
+      background-color:#f8f8f8
+    }
+    pre {
+      margin:0px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <h1>最长公共前缀</h1>
+  <div id="html">
+    
+    <!-- 题目 -->
+    <div class="left bg_grey">
+      <h2>题目</h2>
+      <pre>
+      编写一个函数来查找字符串数组中的最长公共前缀。
+
+      如果不存在公共前缀，返回空字符串 ""。
+
+       
+
+      示例 1：
+
+      输入：strs = ["flower","flow","flight"]
+      输出："fl"
+      示例 2：
+
+      输入：strs = ["dog","racecar","car"]
+      输出：""
+      解释：输入不存在公共前缀。
+      </pre>
+    </div>
+    <!-- 程序 -->
+    <div class="bg_grey right " style="margin-left:2%;">
+      <h2>代码</h2>
+      <pre id="code"></pre>
+    </div>
+  </div>
+  <script>
+    document.getElementById('code').innerHTML = Function.prototype.toString.call(test);
+    /**
+     * @param {string[]} strs
+     * @return {string}
+     */
+    function test(strs) {
+      let index = 1;
+      let s = '';
+      while(index<=strs[0].length){
+        if(strs.every(str=>str.indexOf(strs[0].slice(0,index))==0)){
+          s = strs[0].slice(0,index);
+        }
+        index++;
+      }
+      return s;
+    };
+    console.log(test(["flower","flow","flight"]))
+    console.log(test(["dog","racecar","car"]))
+    console.log(test(["dog","dracecar","dcar"]))
+    console.log(test(["dog","doracecar","docar"]))
+    console.log(test(["","doracecar","docar"]))
+  </script>
+</body>
+</html>
