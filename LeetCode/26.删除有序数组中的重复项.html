@@ -1,0 +1,113 @@
+<!--
+ * @Date: 2021-12-16 17:28:37
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2022-01-05 17:27:32
+ * @FilePath: /DayCode/LeetCode/26. 删除有序数组中的重复项.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>26. 删除有序数组中的重复项</title>
+  <style>
+    body {
+      padding: 20px;
+    }
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+    }
+    #html {
+      display: flex;
+      justify-content: center;
+    }
+    #html div {
+      display: inline-block;
+      width: 49%;
+      border-radius: 1%;
+      padding: 0px 20px ;
+    }
+    .bg_grey {
+      background-color:#f8f8f8
+    }
+    pre {
+      margin:0px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <h1>删除有序数组中的重复项</h1>
+  <div id="html">
+    
+    <!-- 题目 -->
+    <div class="left bg_grey">
+      <h2>题目</h2>
+      <pre>
+      给你一个有序数组 nums ，请你 原地 删除重复出现的元素，使每个元素 只出现一次 ，返回删除后数组的新长度。
+
+      不要使用额外的数组空间，你必须在 原地 修改输入数组 并在使用 O(1) 额外空间的条件下完成。
+
+       
+
+      说明:
+
+      为什么返回数值是整数，但输出的答案是数组呢?
+
+      请注意，输入数组是以「引用」方式传递的，这意味着在函数里修改输入数组对于调用者是可见的。
+
+      你可以想象内部操作如下:
+
+      // nums 是以“引用”方式传递的。也就是说，不对实参做任何拷贝
+      int len = removeDuplicates(nums);
+
+      // 在函数里修改输入数组对于调用者是可见的。
+      // 根据你的函数返回的长度, 它会打印出数组中 该长度范围内 的所有元素。
+      for (int i = 0; i < len; i++) {
+          print(nums[i]);
+      }
+       
+      示例 1：
+
+      输入：nums = [1,1,2]
+      输出：2, nums = [1,2]
+      解释：函数应该返回新的长度 2 ，并且原数组 nums 的前两个元素被修改为 1, 2 。不需要考虑数组中超出新长度后面的元素。
+      示例 2：
+
+      输入：nums = [0,0,1,1,1,2,2,3,3,4]
+      输出：5, nums = [0,1,2,3,4]
+      解释：函数应该返回新的长度 5 ， 并且原数组 nums 的前五个元素被修改为 0, 1, 2, 3, 4 。不需要考虑数组中超出新长度后面的元素。
+       
+
+      提示：
+
+      0 <= nums.length <= 3 * 104
+      -104 <= nums[i] <= 104
+      nums 已按升序排列
+      </pre>
+    </div>
+    <!-- 程序 -->
+    <div class="bg_grey right " style="margin-left:2%;">
+      <h2>代码</h2>
+      <pre id="code"></pre>
+    </div>
+  </div>
+  <script>
+    document.getElementById('code').innerHTML = Function.prototype.toString.call(test);
+    /**
+     * @param {arr[]} nums
+     * @return {string}
+     */
+    function test(nums) {
+        let arr = [...new Set(nums)];
+        nums.splice(0,0,...arr);
+        return arr.length;
+    };
+    console.log(test([1,1,2]))
+  </script>
+</body>
+</html>

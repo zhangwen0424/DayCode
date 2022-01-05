@@ -1,7 +1,7 @@
 /*
  * @Date: 2021-07-22 10:48:37
  * @LastEditors: zhangwen
- * @LastEditTime: 2021-12-15 15:18:18
+ * @LastEditTime: 2021-12-27 11:04:37
  * @FilePath: /DayCode/demos/handleExcel/handle.js
  */
 
@@ -181,7 +181,62 @@ var handleXlsx2 = async function() {
     // }, {"EmployeeCategoryCode":[], "JobCode":[]});
     // console.log("解析成功！",JSON.stringify(obj));
 }
-handleXlsx2()
+// handleXlsx2()
+var handleXlsx22 = async function() {
+    let excel_data = await fnCommon.readXlsx({
+        path: '/十院自定义字段.xlsx',
+    });
+    await fnCommon.writeFile("data.text", excel_data);
+    excel_data = JSON.parse(excel_data);
+    console.log("datas",excel_data);
+
+    let datas = [...excel_data['聘任职称'], ...excel_data['职业、执业证书']].reduce((c,n)=>{
+    // console.log("c,n", c,n)
+        n[0] ? c.push(n[0]) : '';
+        return c;
+    }, []);
+    console.log("datas",datas);
+    return false;
+
+    // data1
+    let data1 = await fnCommon.readXlsx({
+        path: '/十院自定义字段3.xls',
+        sheetName:"第一页",
+    });
+    await fnCommon.writeFile("data.text", data1);
+    data1 = JSON.parse(data1);
+    data1 = data1.reduce((c,n)=>{
+        if(datas.includes(n[3]) || datas.includes(n[4])){
+            c.push(n[0])
+        }
+        return c;
+    },[]);
+    console.log("data1", data1, data1.length, [...new Set(data1)].length,JSON.stringify([...new Set(data1)]))
+
+    return false;
+
+    // data2
+    let data2 = await fnCommon.readXlsx({
+        path: '/十院自定义字段2.xls',
+        sheetName:"第一页",
+    });
+    await fnCommon.writeFile("data.text", data2);
+    data2 = JSON.parse(data2);
+    data2 = data2.reduce((c,n)=>{
+        if(datas.includes(n[5])){
+            c.push(n[0])
+        }
+        return c;
+    },[]);
+
+    let total = [...new Set([...data1,...data2])]
+
+
+    console.log("data1", data1, data1.length, [...new Set(data1)].length)
+    console.log("data2", data2, data2.length, [...new Set(data2)].length)
+    console.log("total", JSON.stringify(total), total.length)
+}
+handleXlsx22();
 
 var handleXlsx3 = async function() {
     let excel_data = await fnCommon.readXlsx({

@@ -1,7 +1,7 @@
 <!--
  * @Date: 2021-07-16 11:24:37
  * @LastEditors: zhangwen
- * @LastEditTime: 2021-12-20 16:40:41
+ * @LastEditTime: 2022-01-05 17:28:35
  * @FilePath: /DayCode/README.md
 -->
 小白心学编程，每天进步一点点。。。
@@ -51,3 +51,4 @@
     - [1.两数之和](https://github.com/zhangwen0424/DayCode/blob/master/DayCode/LeetCode/1.两数之和.html)
     - [13.罗马数字转整数](https://github.com/zhangwen0424/DayCode/blob/master/DayCode/LeetCode/13.罗马数字转整数.html)
     - [14.最长公共前缀](https://github.com/zhangwen0424/DayCode/blob/master/DayCode/LeetCode/14.最长公共前缀.html)
+    - [26.删除有序数组中的重复项.html](https://github.com/zhangwen0424/DayCode/blob/master/DayCode/LeetCode/26.删除有序数组中的重复项.html)
