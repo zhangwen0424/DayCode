@@ -1,7 +1,7 @@
 /*
  * @Date: 2021-07-22 10:48:37
  * @LastEditors: zhangwen
- * @LastEditTime: 2021-12-27 11:04:37
+ * @LastEditTime: 2022-01-26 15:36:44
  * @FilePath: /DayCode/demos/handleExcel/handle.js
  */
 
@@ -236,7 +236,7 @@ var handleXlsx22 = async function() {
     console.log("data2", data2, data2.length, [...new Set(data2)].length)
     console.log("total", JSON.stringify(total), total.length)
 }
-handleXlsx22();
+// handleXlsx22();
 
 var handleXlsx3 = async function() {
     let excel_data = await fnCommon.readXlsx({
@@ -248,3 +248,13 @@ var handleXlsx3 = async function() {
     console.log("excel——data:", excel_data);
 }
 // handleXlsx3();
+
+var handleXlsx4 = async function() {
+    let excel_data = await fnCommon.readXlsx({
+        path: '/筑龙批量修改职级等级.xlsx'
+    });
+    await fnCommon.writeFile('data.text', excel_data);
+    excel_data = JSON.parse(excel_data);
+    console.log("excel——data:", excel_data);
+}
+handleXlsx4();
