@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>圆半圆扇形三角梯形.html</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: grey;
+      }
+      .circle {
+        border-radius: 50%;
+      }
+      .half-circle {
+        height: 50px;
+        border-radius: 50px 50px 0 0;
+      }
+      .sector {
+        border-radius: 100px 0 0;
+      }
+      .triangle {
+        height: 0px;
+        width: 0px;
+        background: none;
+        border: 50px solid red;
+        border-color: transparent transparent red transparent;
+      }
+      .ladder {
+        width: 50px;
+        height: 0px;
+        background: none;
+        border: 50px solid red;
+        border-color: transparent transparent red transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle">圆</div>
+    <div class="half-circle">半圆</div>
+    <div class="sector">扇形</div>
+    <div class="triangle">三角形</div>
+    <div class="ladder">梯形</div>
+  </body>
+</html>
