@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>js设计模式.html</title>
+</head>
+
+<body>
+  <!-- 设计模式： 创建型、结构型、行为型-->
+  <!-- 创建型 -->
+  <script>
+    // 1.工厂模式:创建对象的过程单独封装，使用时只需要无脑传参
+    class Student {
+      constructor({
+        name,
+        age
+      }) {
+        this.name = name;
+        this.age = age;
+      }
+    }
+    let stu1 = new Student({
+      name: '张',
+      age: 18
+    })
+    console.log("stu1:", stu1)
+    // 2.单例模式：保证一个类仅有一个实例，并且提供一个访问它的全局变量
+    let getSingle = (fn) => {
+      let result = null;
+      return function () {
+        return result || (result = fn.apply(this, arguments))
+      }
+    }
+    let createData = () => {
+      console.log("createData")
+      let div = document.createElement('div');
+      div.innerHTML = "model";
+      document.body.appendChild(div);
+      return div;
+    }
+    let singleModel = getSingle(createData)
+    singleModel();
+    singleModel(); //虽然调用两遍，但是只创建一个 div
+    // 3.原型模式：用原型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象
+    // 3.1 使用 object.create
+    var prototype = {
+      name: "Jack",
+      getName: function () {
+        return this.name;
+      },
+    };
+    var obj = Object.create(prototype, {
+      job: {
+        value: "IT",
+      },
+    });
+    console.log(obj.getName()); // Jack
+    console.log(obj.job); // IT
+    console.log(obj.__proto__ === prototype); //true
+    // 3.2 使用构造函数
+    let createObj = function (name) {
+      let cst = function () {};
+      cst.prototype = prototype;
+      let obj = new cst();
+      obj.name = name;
+      return obj;
+    }
+    let obj2 = createObj("mornki");
+    console.log(obj2.name); // mornki
+    // 4.构造器模式
+    function Car({
+      color,
+      year
+    }) {
+      this.color = color;
+      this.year = year;
+    }
+    Car.prototype.toString = function () {
+      return this.color + " car has " + this.year + " year. ";
+    }
+    let car1 = new Car({
+      color: "red",
+      year: '10'
+    })
+    let car2 = new Car({
+      color: "yellow",
+      year: '4'
+    })
+    console.log(car1.toString()); //red car has 10 year. 
+    console.log(car2.toString()); //yellow car has 4 year. 
+  </script>
+  <!-- 行为型 -->
+  <script>
+    // 迭代器模式：遍历一个可遍历的对象
+    class Iterator {
+      constructor(list) {
+        this.list = list;
+        this.index = 0;
+      }
+      isDone() {
+        if (this.index >= this.list.length) {
+          return true
+        }
+        return false;
+      }
+      next() {
+        return [this.list[this.index], this.index++]
+      }
+    }
+    let iterator = new Iterator([1, 2, 3, 4]);
+    while (!iterator.isDone()) {
+      let d = iterator.next();
+      console.log("iterator.next()", d[0], d[1])
+    }
+    // iterator.next() 1 0
+    // iterator.next() 2 1
+    // iterator.next() 3 2
+    // iterator.next() 4 3
+  </script>
+</body>
+
+</html>
