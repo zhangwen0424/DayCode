@@ -1,7 +1,7 @@
 <!--
  * @Date: 2021-07-16 11:24:37
  * @LastEditors: zhangwen
- * @LastEditTime: 2022-02-28 15:57:41
+ * @LastEditTime: 2022-04-02 18:42:56
  * @FilePath: /DayCode/README.md
 -->
 
@@ -35,9 +35,23 @@
     - [轮播图](https://github.com/zhangwen0424/DayCode/blob/master/demos/html和css/轮播图/轮播图.html)
   - JavaScript
     - [js 函数防抖和节流 demo](https://github.com/zhangwen0424/DayCode/blob/master/demos/js/js函数防抖和节流.html)
-    - [js 数组去重复](https://github.com/zhangwen0424/DayCode/blob/master/DayCode/demos/js/js数组去重复.html)
     - [axios 函数封装](https://github.com/zhangwen0424/DayCode/blob/master/DayCode/demos/js/axios函数封装.html)
     - [AJAX 函数封装](https://github.com/zhangwen0424/DayCode/blob/master/DayCode/demos/js/AJAX函数封装.html)
+    - 算法
+      - 排序
+        - [冒泡排序](https://github.com/zhangwen0424/DayCode/blob/master/DayCode/demos/js/算法/排序/1.冒泡排序.html)
+        - [选择排序](https://github.com/zhangwen0424/DayCode/blob/master/DayCode/demos/js/算法/排序/2.选择排序.html)
+        - [归并排序](https://github.com/zhangwen0424/DayCode/blob/master/DayCode/demos/js/算法/排序/3.归并排序.html)
+        - [快速排序](https://github.com/zhangwen0424/DayCode/blob/master/DayCode/demos/js/算法/排序/4.快速排序.html)
+        - [插入排序](https://github.com/zhangwen0424/DayCode/blob/master/DayCode/demos/js/算法/排序/5.插入排序.html)
+      - 数组操作
+        - [数组去重复](https://github.com/zhangwen0424/DayCode/blob/master/DayCode/demos/js/算法/数组操作/1.数组去重复.html)
+        - [数组中最大差值](https://github.com/zhangwen0424/DayCode/blob/master/DayCode/demos/js/算法/数组操作/2.数组中最大差值.html)
+      - 字符串操作
+        - [回文字符串](https://github.com/zhangwen0424/DayCode/blob/master/DayCode/demos/js/算法/字符串操作/1.回文字符串.html)
+        - [字符串翻转](https://github.com/zhangwen0424/DayCode/blob/master/DayCode/demos/js/算法/字符串操作/2.字符串翻转.html)
+        - [生成随机字符串](https://github.com/zhangwen0424/DayCode/blob/master/DayCode/demos/js/算法/字符串操作/3.生成随机字符串.html)
+        - [字符串出现次数最多字符串](https://github.com/zhangwen0424/DayCode/blob/master/DayCode/demos/js/算法/字符串操作/4.字符串出现次数最多字母.html)
   - Node
     - [node-xlsx 解析 excel 数据为 json](https://github.com/zhangwen0424/DayCode/blob/master/demos/handleExcel/README.md)
 

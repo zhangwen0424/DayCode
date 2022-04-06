@@ -1,0 +1,42 @@
+<!--
+ * @Date: 2022-04-01 15:59:47
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2022-04-06 11:47:41
+ * @FilePath: /DayCode/demos/js/算法/排序/2.选择排序.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2.选择排序.html</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * 选择排序
+       * 从未排序的序列中找到最大（或最小的）放在已排序序列的末尾（为空则放在起始位置），重复该操作，知道所有数据都已放入已排序序列中
+       */
+      function selectionSort(arr) {
+        let minIndex;
+        let length = arr.length;
+        for (let i = 0; i < length - 1; i++) {
+          minIndex = i;
+          for (let j = i + 1; j < length; j++) {
+            if (arr[j] < arr[minIndex]) {
+              minIndex = j;
+            }
+          }
+          if (minIndex != i) {
+            let temp = arr[i];
+            arr[i] = arr[minIndex];
+            arr[minIndex] = temp;
+          }
+        }
+        return arr;
+      }
+      console.log(selectionSort([1, 2, 9, 5, 4, 6, 2, 8]));
+    </script>
+  </body>
+</html>

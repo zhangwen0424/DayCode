@@ -1,0 +1,40 @@
+<!--
+ * @Date: 2022-04-01 15:36:19
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2022-04-06 11:47:51
+ * @FilePath: /DayCode/demos/js/算法/排序/1.冒泡排序.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>冒泡排序</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * 冒泡排序
+        1、比较相邻的两个元素，如果前一个比后一个大，则交换位置。
+        2、比较完第一轮的时候，最后一个元素是最大的元素。
+        3、这时候最后一个元素是最大的，所以最后一个元素就不需要参与比较大小
+       */
+      function bubbleSort(arr) {
+        let length = arr.length;
+        for (let i = 0; i < length - 1; i++) {
+          for (let j = 0; j < length - 1 - i; j++) {
+            // 相邻元素两两对比，元素交换，大的元素交换到后面
+            let temp = arr[j];
+            if (arr[j] > arr[j + 1]) {
+              arr[j] = arr[j + 1];
+              arr[j + 1] = temp;
+            }
+          }
+        }
+        return arr;
+      }
+      console.log(bubbleSort([1, 2, 4, 3, 7, 5, 0]));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!--
+ * @Date: 2022-04-01 16:23:48
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2022-04-06 11:19:13
+ * @FilePath: /DayCode/demos/js/算法/排序/3.归并排序.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3.归并排序.html</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * 归并排序
+       *  ● 将原始序列平分成两个小数组
+          ● 判断小数组长度是否为1，不为1则继续分裂
+          ● 原始数组被分称了长度为1的多个小数组，然后合并相邻小数组（有序合并）
+          ● 不断合并小数组，直到合并称一个数组，则为排序后的数组序列
+       */
+      // 分裂数组
+      function mergeSort(arr) {
+        let length = arr.length;
+        if (length == 1) {
+          return arr;
+        }
+        let middle = Math.floor(length / 2);
+        let left = arr.slice(0, middle);
+        let right = arr.slice(middle, length);
+        return mergeArray(mergeSort(left), mergeSort(right));
+      }
+      // 合并数组
+      function mergeArray(left, right) {
+        let result = [];
+        let i = 0;
+        let j = 0;
+        while (i < left.length && j < right.length) {
+          if (left[i] < right[j]) {
+            result.push(left[i++]);
+          } else {
+            result.push(right[j++]);
+          }
+        }
+        while (i != left.length) {
+          result.push(left[i++]);
+        }
+        while (j != right.length) {
+          result.push(right[j++]);
+        }
+        return result;
+      }
+      console.log(mergeSort([4, 5, 2, 0, 7, 1]));
+    </script>
+  </body>
+</html>

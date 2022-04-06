@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>图片预加载.html</title>
+  <style>
+    .imgs {
+      width: 200px;
+      height: 200px
+    }
+  </style>
+</head>
+
+<body>
+  <div id="father">
+    <img class="imgs"
+      data-url="https://th.bing.com/th/id/Rdf0e1dd80b438afbe6ac9d4c5642e01f?rik=WzjpYrSJL7XZqA&riu=http%3a%2f%2fp7.itc.cn%2fimages01%2f20210114%2f0892aa29ab5749e6a01f411e4f3f895a.jpeg&ehk=c3YyWHLFZHKQPiFUSWKAtRb%2bYT3sSMWX1gJORu3g8t0%3d&risl=&pid=ImgRaw"
+      alt="">
+    <img class="imgs"
+      data-url="https://th.bing.com/th/id/R782263c8db610e53494b230a86b0a2ba?rik=pXuOOEdhFkJzwQ&riu=http%3a%2f%2fimg.acgjc.com%2fwp-content%2fuploads%2f2021%2f01%2f2efc7d144f6dde5b18c5f6072ade6f11-1024x1024.jpg&ehk=wMFrPubNS94VLicVWp7rIIOeIA5rqKxbTN7N0qd1P2M%3d&risl=&pid=ImgRaw"
+      alt="">
+  </div>
+  <script>
+    // 设置 图片url
+    class preImage {
+      constructor(imgNode) {
+        this.imgNode = imgNode
+      }
+      setSrc(imgUrl) {
+        this.imgNode.src = imgUrl
+      }
+    }
+    class ProxyImage {
+      constructor(img) {
+        this.img = img;
+      }
+      setSrc(imgUrl) {}
+    }
+    let imgs = document.querySelectorAll('.imgs');
+    imgs.forEach((img) => {
+      img.src = "https://img1.baidu.com/it/u=4105776946,2723577313&fm=26&fmt=auto&gp=0.jpg"
+      const virtualImage = new Image();
+      virtualImage.src = img.getAttribute('data-url');
+      virtualImage.onload = () => {
+        console.log("onload");
+        setTimeout(() => {
+          console.log("onload1");
+          img.src = virtualImage.src;
+        }, 2000);
+      }
+    })
+  </script>
+</body>
+
+</html>

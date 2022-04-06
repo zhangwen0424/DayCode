@@ -1,0 +1,28 @@
+<!--
+ * @Date: 2022-04-02 14:47:02
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2022-04-02 14:48:26
+ * @FilePath: /DayCode/demos/js/算法/字符串操作/3.生成随机字符串.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3.生成随机字符串.html</title>
+  </head>
+  <body>
+    <script>
+      function randomStr(n) {
+        let str = "abcdefghijklmnopqrstuvwxyz0123456789";
+        let temp = "";
+        for (let i = 0; i < n; i++) {
+          temp += str.charAt(Math.round(Math.random() * str.length));
+        }
+        return temp;
+      }
+      console.log(randomStr(3));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!--
+ * @Date: 2022-04-02 14:58:36
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2022-04-02 15:06:25
+ * @FilePath: /DayCode/demos/js/算法/字符串操作/4.字符串出现次数最多字母.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4.字符串出现次数最多字母.html</title>
+  </head>
+  <body>
+    <script>
+      // 统计字符串中次数最多字母
+      function findMaxDuplicateChar(str) {
+        let charObj = {};
+        for (let i = 0; i < str.length; i++) {
+          let key = str.charAt(i);
+          if (charObj[key]) {
+            charObj[key] += 1;
+          } else {
+            charObj[key] = 1;
+          }
+        }
+        let maxChar = "";
+        for (let k in charObj) {
+          if (charObj[k] > (charObj[maxChar] || 1)) {
+            maxChar = k;
+          }
+        }
+        return maxChar + ":" + charObj[maxChar];
+      }
+      console.log(findMaxDuplicateChar("aaaabdcdda"));
+    </script>
+  </body>
+</html>

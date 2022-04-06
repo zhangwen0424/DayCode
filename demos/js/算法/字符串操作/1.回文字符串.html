@@ -1,0 +1,56 @@
+<!--
+ * @Date: 2022-04-02 11:11:30
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2022-04-02 11:31:09
+ * @FilePath: /DayCode/demos/js/算法/字符串操作/1.回文字符串.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1.回文字符串.html</title>
+  </head>
+  <body>
+    <script>
+      // 回文字符串：正读反读都一样
+      // 判断一个字符串是不是回文字符串
+      function isPalindrome(str) {
+        let str_s = str.split("").reverse().join("");
+        return str_s == str;
+      }
+      // 判断字符串中的所有回文字符串
+      function palindromeStr(str) {
+        let palidrome = [];
+        for (let i = 0; i < str.length; i++) {
+          let temp = "";
+          for (let j = i; j < str.length; j++) {
+            temp += str.charAt(j);
+            if (isPalindrome(temp) && palidrome.indexOf(temp) == -1) {
+              palidrome.push(temp);
+            }
+          }
+        }
+        return palidrome;
+      }
+      // 判断字符串中的最长回文字符串
+      function palidromeLongestStr(str) {
+        let longest = "";
+        for (let i = 0; i < str.length; i++) {
+          let temp = "";
+          for (let j = i; j < str.length; j++) {
+            temp += str.charAt(j);
+            if (isPalindrome(temp) && longest.length < temp.length) {
+              longest = temp;
+            }
+          }
+        }
+        return longest;
+      }
+      console.log(isPalindrome("abcba")); // true
+      console.log(palindromeStr("abcdcsba")); // ['a', 'b', 'c', 'cdc', 'd', 's']
+      console.log(palidromeLongestStr("abcdcsba")); // cdc
+    </script>
+  </body>
+</html>

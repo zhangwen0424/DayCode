@@ -1,0 +1,34 @@
+<!--
+ * @Date: 2022-04-02 15:21:58
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2022-04-02 15:24:56
+ * @FilePath: /DayCode/demos/js/算法/数组操作/2.数组中最大差值.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2.数组中最大差值.html</title>
+  </head>
+  <body>
+    <script>
+      // 数组中最大差值
+      function maxProfit(arr) {
+        let minData = arr[0];
+        let maxData = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] < minData) {
+            minData = arr[i];
+          }
+          if (arr[i] > maxData) {
+            maxData = arr[i];
+          }
+        }
+        return maxData + "-" + minData + "=" + (maxData - minData);
+      }
+      console.log(maxProfit([1, 2, 4, 1, 5, 9]));
+    </script>
+  </body>
+</html>
