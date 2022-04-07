@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "dayjs": "^1.11.0",
     "lodash": "^4.17.21",
     "node-xlsx": "^0.17.1",
     "util": "^0.12.4"

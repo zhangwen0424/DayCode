@@ -1,7 +1,7 @@
 /*
  * @Date: 2021-07-22 10:48:37
  * @LastEditors: zhangwen
- * @LastEditTime: 2022-03-15 11:01:57
+ * @LastEditTime: 2022-04-07 15:37:01
  * @FilePath: /DayCode/demos/handleExcel/handle.js
  */
 
@@ -11,10 +11,11 @@
 
 // 所需要的node包
 const fs = require("fs");
-const { isEmpty } = require("lodash");
+const { isEmpty, isDate } = require("lodash");
 const xlsx = require("node-xlsx");
 const util = require("util");
 const color = require("color");
+const dayjs = require("dayjs");
 
 let fnCommon = {
   /**
@@ -29,7 +30,9 @@ let fnCommon = {
       format = p.format;
     let excel_path = __dirname + path;
     // cellDate将日期转换为正却日期
-    // let data = await xlsx.parse(fs.readFileSync(excel_path), {cellDates: true});
+    // let data = await xlsx.parse(fs.readFileSync(excel_path), {
+    //   cellDates: true,
+    // });
     let data = await xlsx.parse(fs.readFileSync(excel_path));
     // console.log("data",JSON.stringify(data))
     let sheet_datas = data.reduce(function (current, x, index) {
@@ -39,7 +42,11 @@ let fnCommon = {
         if (!v.length || !k) return c;
         let obj = {};
         currentRowName.forEach(function (y, i) {
-          obj[y] = v[i] || String(v[i]) ? String(v[i]) : "";
+          let d = v[i] || String(v[i]) ? String(v[i]) : "";
+          obj[y] = d;
+          // if (isNaN(d) && !isNaN(Date.parse(d))) {
+          //   obj[y] = dayjs(d).format("YYYY-MM-DD");
+          // }
         });
         c.push(obj);
         return c;
@@ -270,10 +277,10 @@ var handleXlsx3 = async function () {
 
 var handleXlsx4 = async function () {
   let excel_data = await fnCommon.readXlsx({
-    path: "/1910中心化系数更新数据.xlsx",
+    path: "/1094批量异动名单.xlsx",
   });
   await fnCommon.writeFile("data.json", excel_data);
   excel_data = JSON.parse(excel_data);
-  console.log("excel——data:", excel_data);
+  // console.log("excel——data:", excel_data);
 };
 handleXlsx4();
