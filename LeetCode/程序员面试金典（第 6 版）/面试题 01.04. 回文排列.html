@@ -1,0 +1,126 @@
+<!--
+ * @Date: 2021-12-16 17:28:37
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2022-04-08 16:35:13
+ * @FilePath: /DayCode/LeetCode/程序员面试金典（第 6 版）/面试题 01.04. 回文排列.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>面试题 01.04. 回文排列</title>
+    <style>
+      body {
+        padding: 20px;
+      }
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      #html {
+        display: flex;
+        justify-content: center;
+      }
+      #html div {
+        display: inline-block;
+        width: 49%;
+        border-radius: 1%;
+        padding: 0px 20px;
+      }
+      .bg_grey {
+        background-color: #f8f8f8;
+      }
+      pre {
+        margin: 0px;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>面试题 01.04. 回文排列</h1>
+    <div id="html">
+      <!-- 题目 -->
+      <div class="left bg_grey">
+        <h2>题目</h2>
+        <pre>
+      给定一个字符串，编写一个函数判定其是否为某个回文串的排列之一。
+
+回文串是指正反两个方向都一样的单词或短语。排列是指字母的重新排列。
+
+回文串不一定是字典当中的单词。
+
+ 
+
+示例1：
+
+输入："tactcoa"
+输出：true（排列有"tacocat"、"atcocta"，等等）
+
+
+      </pre
+        >
+      </div>
+      <!-- 程序 -->
+      <div class="bg_grey right" style="margin-left: 2%">
+        <h2>代码</h2>
+        <pre id="code"></pre>
+      </div>
+    </div>
+    <script>
+      /**
+       * @param {string} s
+       * @return {boolean}
+       */
+      var canPermutePalindrome = function (s) {
+        s = s.split("");
+        let arr = [...new Set(s)];
+        let count = 0; //奇数个字符总数
+        for (let i = 0; i < arr.length; i++) {
+          let total = s.filter((ss) => ss == arr[i]).length;
+          if (total % 2) {
+            count++;
+          }
+          if (count > 2) {
+            break;
+          }
+        }
+        return count < 2;
+
+        /*  console.log("arr", arr);
+        let obj = {};
+        let total = 0; //奇数字符总数
+        for (let i = 0; i < s.length; i++) {
+          if (result)
+            if (result.includes(s[i])) {
+              continue;
+            } else {
+              result.push(s[i]);
+              let count = 1;
+              for (let j = 1; j < s.length; j++) {
+                if (s[j] == s[i]) {
+                  count++;
+                }
+              }
+              console.log("count", count);
+              if (count % 2) {
+                total += 1;
+                if (total > 2) {
+                  break;
+                }
+              }
+            }
+        }
+        console.log("total", total, result); */
+      };
+      console.log(canPermutePalindrome("tactcoa"));
+      console.log(canPermutePalindrome("aab"));
+      console.log(canPermutePalindrome("code"));
+      document.getElementById("code").innerHTML =
+        Function.prototype.toString.call(canPermutePalindrome);
+    </script>
+  </body>
+</html>

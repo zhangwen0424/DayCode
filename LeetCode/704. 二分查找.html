@@ -1,0 +1,101 @@
+<!--
+ * @Date: 2021-12-16 17:28:37
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2022-04-07 17:50:24
+ * @FilePath: /DayCode/LeetCode/704. 二分查找.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>704. 二分查找</title>
+    <style>
+      body {
+        padding: 20px;
+      }
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      #html {
+        display: flex;
+        justify-content: center;
+      }
+      #html div {
+        display: inline-block;
+        width: 49%;
+        border-radius: 1%;
+        padding: 0px 20px;
+      }
+      .bg_grey {
+        background-color: #f8f8f8;
+      }
+      pre {
+        margin: 0px;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>704. 二分查找</h1>
+    <div id="html">
+      <!-- 题目 -->
+      <div class="left bg_grey">
+        <h2>题目</h2>
+        <pre>
+      给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target  ，写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1。
+
+
+示例 1:
+
+输入: nums = [-1,0,3,5,9,12], target = 9
+输出: 4
+解释: 9 出现在 nums 中并且下标为 4
+示例 2:
+
+输入: nums = [-1,0,3,5,9,12], target = 2
+输出: -1
+解释: 2 不存在 nums 中因此返回 -1
+      </pre
+        >
+      </div>
+      <!-- 程序 -->
+      <div class="bg_grey right" style="margin-left: 2%">
+        <h2>代码</h2>
+        <pre id="code"></pre>
+      </div>
+    </div>
+    <script>
+      document.getElementById("code").innerHTML =
+        Function.prototype.toString.call(search);
+      /**
+       * @param {number[]} nums
+       * @param {number} target
+       * @return {number}
+       */
+      function search(nums, target) {
+        let left = 0;
+        let right = nums.length - 1;
+        while (left <= right) {
+          let pivotIndex = Math.floor((right - left) / 2) + left;
+          let num = nums[pivotIndex];
+          if (num == target) {
+            return pivotIndex;
+          } else if (num > target) {
+            right--;
+          } else {
+            left++;
+          }
+        }
+        return -1;
+      }
+      console.log(search([-1, 0, 3, 5, 9, 12], 9));
+      console.log(search([-1, 0, 3, 5, 9, 12], 2));
+      console.log(search([2, 5], 2));
+    </script>
+  </body>
+</html>

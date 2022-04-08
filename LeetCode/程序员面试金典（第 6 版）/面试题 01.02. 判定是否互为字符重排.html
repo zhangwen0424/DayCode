@@ -1,0 +1,87 @@
+<!--
+ * @Date: 2021-12-16 17:28:37
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2022-04-08 15:40:38
+ * @FilePath: /DayCode/LeetCode/程序员面试金典（第 6 版）/面试题 01.02. 判定是否互为字符重排.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>面试题 01.02. 判定是否互为字符重排</title>
+    <style>
+      body {
+        padding: 20px;
+      }
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      #html {
+        display: flex;
+        justify-content: center;
+      }
+      #html div {
+        display: inline-block;
+        width: 49%;
+        border-radius: 1%;
+        padding: 0px 20px;
+      }
+      .bg_grey {
+        background-color: #f8f8f8;
+      }
+      pre {
+        margin: 0px;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>面试题 01.02. 判定是否互为字符重排</h1>
+    <div id="html">
+      <!-- 题目 -->
+      <div class="left bg_grey">
+        <h2>题目</h2>
+        <pre>
+      给定两个字符串 s1 和 s2，请编写一个程序，确定其中一个字符串的字符重新排列后，能否变成另一个字符串。
+
+示例 1：
+
+输入: s1 = "abc", s2 = "bca"
+输出: true 
+示例 2：
+
+输入: s1 = "abc", s2 = "bad"
+输出: false
+
+      </pre
+        >
+      </div>
+      <!-- 程序 -->
+      <div class="bg_grey right" style="margin-left: 2%">
+        <h2>代码</h2>
+        <pre id="code"></pre>
+      </div>
+    </div>
+    <script>
+      /**
+       * @param {string} s1
+       * @param {string} s2
+       * @return {boolean}
+       */
+      var CheckPermutation = function (s1, s2) {
+        s1 = [...s1].sort().join("");
+        s2 = [...s2].sort().join("");
+        return s1.length == s2.length && s1 == s2;
+      };
+      console.log(CheckPermutation("abc", "bca"));
+      console.log(CheckPermutation("abc", "bad"));
+      document.getElementById("code").innerHTML =
+        Function.prototype.toString.call(CheckPermutation);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!--
+ * @Date: 2021-12-16 17:28:37
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2022-04-07 18:18:25
+ * @FilePath: /DayCode/LeetCode/344. 反转字符串.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>344. 反转字符串</title>
+    <style>
+      body {
+        padding: 20px;
+      }
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      #html {
+        display: flex;
+        justify-content: center;
+      }
+      #html div {
+        display: inline-block;
+        width: 49%;
+        border-radius: 1%;
+        padding: 0px 20px;
+      }
+      .bg_grey {
+        background-color: #f8f8f8;
+      }
+      pre {
+        margin: 0px;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>344. 反转字符串</h1>
+    <div id="html">
+      <!-- 题目 -->
+      <div class="left bg_grey">
+        <h2>题目</h2>
+        <pre>
+      编写一个函数，其作用是将输入的字符串反转过来。输入字符串以字符数组 s 的形式给出。
+
+不要给另外的数组分配额外的空间，你必须原地修改输入数组、使用 O(1) 的额外空间解决这一问题。
+
+ 
+
+示例 1：
+
+输入：s = ["h","e","l","l","o"]
+输出：["o","l","l","e","h"]
+示例 2：
+
+输入：s = ["H","a","n","n","a","h"]
+输出：["h","a","n","n","a","H"]
+
+      </pre
+        >
+      </div>
+      <!-- 程序 -->
+      <div class="bg_grey right" style="margin-left: 2%">
+        <h2>代码</h2>
+        <pre id="code"></pre>
+      </div>
+    </div>
+    <script>
+      /**
+       * @param {character[]} s
+       * @return {void} Do not return anything, modify s in-place instead.
+       */
+      var reverseString = function (s) {
+        // let left = 0;
+        // let right = s.length - 1;
+        // while (left < right) {
+        //   let temp = s[left];
+        //   s[left] = s[right];
+        //   s[right] = temp;
+        //   left++;
+        //   right--;
+        // }
+        // return s;
+        return s.reverse();
+      };
+      console.log(reverseString(["h", "e", "l", "l", "o"]));
+      console.log(reverseString(["H", "a", "n", "n", "a", "h"]));
+      document.getElementById("code").innerHTML =
+        Function.prototype.toString.call(reverseString);
+    </script>
+  </body>
+</html>

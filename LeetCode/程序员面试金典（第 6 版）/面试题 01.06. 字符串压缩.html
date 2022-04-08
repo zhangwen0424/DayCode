@@ -1,0 +1,98 @@
+<!--
+ * @Date: 2021-12-16 17:28:37
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2022-04-08 16:00:03
+ * @FilePath: /DayCode/LeetCode/程序员面试金典（第 6 版）/面试题 01.06. 字符串压缩.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>面试题 01.06. 字符串压缩</title>
+    <style>
+      body {
+        padding: 20px;
+      }
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      #html {
+        display: flex;
+        justify-content: center;
+      }
+      #html div {
+        display: inline-block;
+        width: 49%;
+        border-radius: 1%;
+        padding: 0px 20px;
+      }
+      .bg_grey {
+        background-color: #f8f8f8;
+      }
+      pre {
+        margin: 0px;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>面试题 01.06. 字符串压缩</h1>
+    <div id="html">
+      <!-- 题目 -->
+      <div class="left bg_grey">
+        <h2>题目</h2>
+        <pre>
+      字符串压缩。利用字符重复出现的次数，编写一种方法，实现基本的字符串压缩功能。比如，字符串aabcccccaaa会变为a2b1c5a3。若“压缩”后的字符串没有变短，则返回原先的字符串。你可以假设字符串中只包含大小写英文字母（a至z）。
+
+示例1:
+
+ 输入："aabcccccaaa"
+ 输出："a2b1c5a3"
+示例2:
+
+ 输入："abbccd"
+ 输出："abbccd"
+ 解释："abbccd"压缩后为"a1b2c2d1"，比原字符串长度更长。
+
+      </pre
+        >
+      </div>
+      <!-- 程序 -->
+      <div class="bg_grey right" style="margin-left: 2%">
+        <h2>代码</h2>
+        <pre id="code"></pre>
+      </div>
+    </div>
+    <script>
+      /**
+       * @param {string} S
+       * @return {string}
+       */
+      var compressString = function (S) {
+        let result = "";
+        let temp = S[0];
+        let count = 1;
+        for (let i = 1; i < S.length; i++) {
+          if (S[i] == temp) {
+            count++;
+          } else {
+            result = result + temp + count;
+            count = 1;
+            temp = S[i];
+          }
+        }
+        result = result + temp + count;
+        return result.length >= S.length ? S : result;
+      };
+      console.log(compressString("aabcccccaaa"));
+      console.log(compressString("abbccd"));
+      document.getElementById("code").innerHTML =
+        Function.prototype.toString.call(compressString);
+    </script>
+  </body>
+</html>
