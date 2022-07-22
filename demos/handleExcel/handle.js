@@ -1,7 +1,7 @@
 /*
  * @Date: 2021-07-22 10:48:37
  * @LastEditors: zhangwen
- * @LastEditTime: 2022-04-07 15:37:01
+ * @LastEditTime: 2022-07-22 18:01:07
  * @FilePath: /DayCode/demos/handleExcel/handle.js
  */
 
@@ -34,9 +34,10 @@ let fnCommon = {
     //   cellDates: true,
     // });
     let data = await xlsx.parse(fs.readFileSync(excel_path));
-    // console.log("data",JSON.stringify(data))
+    console.log("data", JSON.stringify(data));
     let sheet_datas = data.reduce(function (current, x, index) {
       x.data = x.data ? x.data : [];
+      if (!x.data.length) return current;
       let currentRowName = [...new Array(x.data[0].length).keys()];
       let arr = x.data.reduce(function (c, v, k) {
         if (!v.length || !k) return c;
@@ -277,7 +278,7 @@ var handleXlsx3 = async function () {
 
 var handleXlsx4 = async function () {
   let excel_data = await fnCommon.readXlsx({
-    path: "/1094批量异动名单.xlsx",
+    path: "/人像卡名单不在一卡通系统的人员.xlsx",
   });
   await fnCommon.writeFile("data.json", excel_data);
   excel_data = JSON.parse(excel_data);
