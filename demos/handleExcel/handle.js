@@ -1,7 +1,7 @@
 /*
  * @Date: 2021-07-22 10:48:37
  * @LastEditors: zhangwen
- * @LastEditTime: 2022-07-22 18:01:07
+ * @LastEditTime: 2022-08-02 16:16:35
  * @FilePath: /DayCode/demos/handleExcel/handle.js
  */
 
@@ -11,11 +11,12 @@
 
 // 所需要的node包
 const fs = require("fs");
-const { isEmpty, isDate } = require("lodash");
+const l = require("lodash");
 const xlsx = require("node-xlsx");
 const util = require("util");
 const color = require("color");
 const dayjs = require("dayjs");
+const { type } = require("os");
 
 let fnCommon = {
   /**
@@ -26,25 +27,33 @@ let fnCommon = {
    */
   readXlsx: async function (p) {
     let path = p.path,
-      sheetName = p.sheetName,
-      format = p.format;
+      sheetName = p.sheetName, // sheet 名称
+      format = p.format,
+      dateCol = p.dateCol, // 日期列
+      getFormatDate_XLSX = this.getFormatDate_XLSX;
     let excel_path = __dirname + path;
     // cellDate将日期转换为正却日期
     // let data = await xlsx.parse(fs.readFileSync(excel_path), {
     //   cellDates: true,
     // });
     let data = await xlsx.parse(fs.readFileSync(excel_path));
-    console.log("data", JSON.stringify(data));
+    // console.log("data", JSON.stringify(data));
     let sheet_datas = data.reduce(function (current, x, index) {
       x.data = x.data ? x.data : [];
-      if (!x.data.length) return current;
+      if (!x.data.length || !l.compact(x.data).length) return current;
       let currentRowName = [...new Array(x.data[0].length).keys()];
       let arr = x.data.reduce(function (c, v, k) {
         if (!v.length || !k) return c;
         let obj = {};
         currentRowName.forEach(function (y, i) {
-          let d = v[i] || String(v[i]) ? String(v[i]) : "";
-          obj[y] = d;
+          let d =
+            typeof v[i] != "undefined" && typeof v[i] != "null"
+              ? String(v[i])
+              : "";
+          if (d && dateCol.includes(i)) {
+            d = getFormatDate_XLSX(v[i]);
+          }
+          obj[y] = d || "";
           // if (isNaN(d) && !isNaN(Date.parse(d))) {
           //   obj[y] = dayjs(d).format("YYYY-MM-DD");
           // }
@@ -85,6 +94,43 @@ let fnCommon = {
     } else {
       //   return moment(new Date(1900, 0, date)).subtract(1).format('YYYY-MM-DD');
     }
+  },
+  //将excel的日期格式转成Date()对象;
+  getFormatDate_XLSX: (serial) => {
+    var utc_days = Math.floor(serial - 25569);
+    var utc_value = utc_days * 86400;
+    var date_info = new Date(utc_value * 1000);
+    var fractional_day = serial - Math.floor(serial) + 0.0000001;
+    var total_seconds = Math.floor(86400 * fractional_day);
+    var seconds = total_seconds % 60;
+    total_seconds -= seconds;
+    var hours = Math.floor(total_seconds / (60 * 60));
+    var minutes = Math.floor(total_seconds / 60) % 60;
+    var d = new Date(
+      date_info.getFullYear(),
+      date_info.getMonth(),
+      date_info.getDate(),
+      hours,
+      minutes,
+      seconds
+    );
+    if (isNaN(Date.parse(d))) {
+      d = serial;
+    } else {
+      d = dayjs(d).format("YYYY-MM-DD");
+    }
+    //得到Date()对象后，便可进行日期格式化了！
+    // var add0 = (m) => (m < 10 ? "0" + m : m);
+    // var d = this.getFormatDate_XLSX(44358.9999884259);
+    // var YYYY = d.getFullYear();
+    // var MM = add0(d.getMonth() + 1);
+    // var DD = add0(d.getDate());
+    // var hh = add0(d.getHours());
+    // var mm = add0(d.getMinutes());
+    // var ss = add0(d.getSeconds());
+    // return `${YYYY}-${MM}-${DD} ${hh}:${mm}:${ss}`;
+    // return `${YYYY}-${MM}-${DD}`;
+    return d;
   },
 };
 
@@ -277,8 +323,13 @@ var handleXlsx3 = async function () {
 // handleXlsx3();
 
 var handleXlsx4 = async function () {
-  let excel_data = await fnCommon.readXlsx({
-    path: "/人像卡名单不在一卡通系统的人员.xlsx",
+  let readXlsx = fnCommon.readXlsx.bind(fnCommon);
+  // let excel_data = await fnCommon.readXlsx({
+  //   path: "/朗姿离职人员批量8.1.xlsx",
+  // });
+  let excel_data = await fnCommon.readXlsx.call(fnCommon, {
+    path: "/朗姿离职人员批量8.1.xlsx",
+    dateCol: [2],
   });
   await fnCommon.writeFile("data.json", excel_data);
   excel_data = JSON.parse(excel_data);
