@@ -1,0 +1,24 @@
+<!--
+ * @Date: 2022-04-02 14:58:36
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2022-08-17 14:30:25
+ * @FilePath: /DayCode/demos/js/算法/字符串操作/7.驼峰命名转换成短横线命名.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>驼峰命名转换成短横线命名.html</title>
+  </head>
+  <body>
+    <script>
+      // 驼峰命名转换成短横线命名.html
+      function getKebabCase(str) {
+        return str.replace(/[A-Z]/g, (l) => "-" + l.toLowerCase());
+      }
+      console.log(getKebabCase("helloWorldGreat"));
+    </script>
+  </body>
+</html>

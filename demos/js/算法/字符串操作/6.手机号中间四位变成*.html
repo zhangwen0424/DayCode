@@ -1,0 +1,25 @@
+<!--
+ * @Date: 2022-04-02 14:58:36
+ * @LastEditors: zhangwen
+ * @LastEditTime: 2022-08-17 14:26:31
+ * @FilePath: /DayCode/demos/js/算法/字符串操作/6.手机号中间四位变成*.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6.手机号中间四位变成*.html</title>
+  </head>
+  <body>
+    <script>
+      // 手机号中间四位变成*
+      function telFormat(str) {
+        // return str.slice(0, 3) + Array(4).fill("*").join("") + str.slice(7);// 使用 slice
+        return str.substr(0, 3) + Array(4).fill("*").join("") + str.substr(7); // 使用 substr
+      }
+      console.log(telFormat("15503978798"));
+    </script>
+  </body>
+</html>
