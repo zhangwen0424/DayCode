@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * Promise.all() 有一个Promise对象失败则全部失败，输出第一个失败的原因
+          Promise.allSettled() 不关心Promise对象的成功或者失败，只关心结果
+          Promise.any() 返回第一个成功的Promise对象
+          Promise.race() 返回执行最快的那个Promise对象，无论它是成功还是失败
+          Promise.resolve() 返回一个状态为成功的Promise对象
+          Promise.reject() 返回一个状态为失败的Promise对象
+       */
+      let p1 = new Promise((resolve, reject) => {
+        setTimeout(resolve, 400, "one");
+      });
+      let p2 = Promise.reject("two");
+      let p3 = new Promise((resolve, reject) => {
+        setTimeout(resolve, 1000, "three");
+      });
+      let p4 = Promise.resolve("four");
+      let p5 = new Promise((resolve, reject) => {
+        // reject('reject');
+        setTimeout(resolve, 500, "five");
+      });
+      Promise.all([p1, p2, p3, p4, p5])
+        .then((values) => {
+          console.log(values, "all");
+        })
+        .catch((err) => {
+          console.log(err, "allBad"); // two allBad
+        });
+
+      Promise.allSettled([p1, p2, p3, p4, p5])
+        .then((values) => {
+          console.log(values, "allSettled"); // [{status:"fulfilled",value:'one'}...] allSettled
+        })
+        .catch((err) => {
+          console.log(err, "allSettledBad");
+        });
+
+      Promise.any([p1, p2, p3, p4, p5])
+        .then((values) => {
+          console.log(values, "any"); // four any
+        })
+        .catch((err) => {
+          console.log(err, "anyBad");
+        });
+
+      Promise.race([p1, p2, p3, p4, p5])
+        .then((values) => {
+          console.log(values, "race");
+        })
+        .catch((err) => {
+          console.log(err, "raceBad"); // two raceBad
+        });
+    </script>
+  </body>
+</html>

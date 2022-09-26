@@ -1,0 +1,24 @@
+{
+  "name": "ts_project",
+  "version": "1.0.0",
+  "description": "## 0、TypeScript 简介",
+  "main": "index.js",
+  "dependencies": {
+    "_typescript@4.6.2@typescript": "^4.6.2",
+    "typescript": "^4.6.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangwen0424/ts_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangwen0424/ts_project/issues"
+  },
+  "homepage": "https://github.com/zhangwen0424/ts_project#readme"
+}

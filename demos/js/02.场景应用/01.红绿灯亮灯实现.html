@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 红灯3秒亮一次，绿灯1秒亮一次，黄灯2秒亮一次；如何使用Promise让三个灯不断交替重复亮灯？
+
+      // 1. promise的实现
+      function light(value, time) {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            // console.log(value);
+            resolve(console.log(value));
+          }, time);
+        });
+      }
+      function start() {
+        Promise.resolve()
+          .then(() => {
+            return light("red", 3000);
+          })
+          .then(() => {
+            return light("green", 1000);
+          })
+          .then(() => {
+            return light("yellow", 2000);
+          })
+          .then(() => {
+            start();
+          });
+      }
+      // start();
+
+      // 2. reduce的实现
+      let arr = [
+        {
+          color: "red",
+          time: 3000,
+        },
+        {
+          color: "green",
+          time: 1000,
+        },
+        {
+          color: "yellow",
+          time: 1000,
+        },
+      ];
+      function run(arr) {
+        arr
+          .reduce((pre, cur, index) => {
+            return pre.then(() => {
+              return new Promise((resolve) => {
+                setTimeout(() => {
+                  resolve(console.log(cur.color));
+                }, cur.time);
+              });
+            });
+          }, Promise.resolve())
+          .then(() => {
+            run(arr);
+          });
+      }
+      run(arr);
+    </script>
+  </body>
+</html>

@@ -1,14 +1,14 @@
 <!--
  * @Date: 2021-07-16 11:24:37
  * @LastEditors: zhangwen
- * @LastEditTime: 2022-04-02 18:42:56
+ * @LastEditTime: 2022-09-26 13:54:43
  * @FilePath: /DayCode/README.md
 -->
 
 小白心学编程，每天进步一点点。。。
 
 - 公共可调用接口：https://www.showapi.com/api/apiList?srcId=free
-  - 英文预录： https://www.showapi.com/apiGateway/generateSignUrl?showapi_apiCode=1211
+  - 英文语录： https://www.showapi.com/apiGateway/generateSignUrl?showapi_apiCode=1211
 
 **文件目录**
 
