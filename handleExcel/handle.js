@@ -1,8 +1,8 @@
 /*
  * @Date: 2021-07-22 10:48:37
  * @LastEditors: zhangwen
- * @LastEditTime: 2022-09-26 13:51:54
- * @FilePath: /DayCode/demos/handleExcel/handle.js
+ * @LastEditTime: 2022-12-16 14:51:53
+ * @FilePath: /DayCode/handleExcel/handle.js
  */
 
 /**
@@ -26,11 +26,13 @@ let fnCommon = {
    * @param {需要获取哪个sheet页数据，不传默认返回第一个} sheetName
    */
   readXlsx: async function (p) {
-    let path = p.path,
-      sheetName = p.sheetName, // sheet 名称
-      format = p.format,
-      dateCol = p.dateCol, // 日期列
-      getFormatDate_XLSX = this.getFormatDate_XLSX;
+    let { path, sheetName, format, dateCol = "", fildMaps } = p;
+    // let path = p.path,
+    //   sheetName = p.sheetName, // sheet 名称
+    //   format = p.format,
+    //   dateCol = p.dateCol, // 日期列
+    //   fildMaps = p.fildMaps;
+    getFormatDate_XLSX = this.getFormatDate_XLSX;
     let excel_path = __dirname + path;
     // cellDate将日期转换为正却日期
     // let data = await xlsx.parse(fs.readFileSync(excel_path), {
@@ -42,6 +44,7 @@ let fnCommon = {
       x.data = x.data ? x.data : [];
       if (!x.data.length || !l.compact(x.data).length) return current;
       let currentRowName = [...new Array(x.data[0].length).keys()];
+      let customRowField = fildMaps ? fildMaps : [];
       let arr = x.data.reduce(function (c, v, k) {
         if (!v.length || !k) return c;
         let obj = {};
@@ -50,10 +53,11 @@ let fnCommon = {
             typeof v[i] != "undefined" && typeof v[i] != "null"
               ? String(v[i])
               : "";
-          if (d && dateCol.includes(i)) {
+          if (d && dateCol && dateCol.includes(i)) {
             d = getFormatDate_XLSX(v[i]);
           }
-          obj[y] = d || "";
+          obj[customRowField && customRowField[y] ? customRowField[y] : y] =
+            d || "";
           // if (isNaN(d) && !isNaN(Date.parse(d))) {
           //   obj[y] = dayjs(d).format("YYYY-MM-DD");
           // }
@@ -328,8 +332,39 @@ var handleXlsx4 = async function () {
   //   path: "/朗姿离职人员批量8.1.xlsx",
   // });
   let excel_data = await fnCommon.readXlsx.call(fnCommon, {
-    path: "/更新人事事件-十院0908 (1).xlsx",
-    dateCol: [2],
+    // path: "/人事异动1215.xlsx",
+    // fildMaps: [
+    //   "pa_event_name",
+    //   "people_no",
+    //   "people_name",
+    //   "pa_reason_name",
+    //   "psr_name",
+    //   "esg_name",
+    //   "validFrom",
+    //   "validTo",
+    //   "ou_code",
+    //   "ou_name",
+    //   "position_code",
+    //   "position_name",
+    // ],
+    // dateCol: [6, 7],
+    path: "/第二批离职人员名单1215.xls",
+    fildMaps: [
+      "pa_event_name",
+      "people_no",
+      "people_name",
+      "pa_reason_name",
+      "pa_reason_code",
+      "psr_name",
+      "esg_name",
+      "validFrom",
+      "validTo",
+      "ou_code",
+      "ou_name",
+      "position_code",
+      "position_name",
+    ],
+    dateCol: [7, 8],
   });
   await fnCommon.writeFile("data.json", excel_data);
   excel_data = JSON.parse(excel_data);
