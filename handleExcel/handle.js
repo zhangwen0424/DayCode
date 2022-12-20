@@ -1,7 +1,7 @@
 /*
  * @Date: 2021-07-22 10:48:37
  * @LastEditors: zhangwen
- * @LastEditTime: 2022-12-16 14:51:53
+ * @LastEditTime: 2022-12-16 16:17:17
  * @FilePath: /DayCode/handleExcel/handle.js
  */
 
@@ -332,23 +332,23 @@ var handleXlsx4 = async function () {
   //   path: "/朗姿离职人员批量8.1.xlsx",
   // });
   let excel_data = await fnCommon.readXlsx.call(fnCommon, {
-    // path: "/人事异动1215.xlsx",
-    // fildMaps: [
-    //   "pa_event_name",
-    //   "people_no",
-    //   "people_name",
-    //   "pa_reason_name",
-    //   "psr_name",
-    //   "esg_name",
-    //   "validFrom",
-    //   "validTo",
-    //   "ou_code",
-    //   "ou_name",
-    //   "position_code",
-    //   "position_name",
-    // ],
-    // dateCol: [6, 7],
-    path: "/第二批离职人员名单1215.xls",
+    /* path: "/人事异动1215.xlsx",
+    fildMaps: [
+      "pa_event_name",
+      "people_no",
+      "people_name",
+      "pa_reason_name",
+      "psr_name",
+      "esg_name",
+      "validFrom",
+      "validTo",
+      "ou_code",
+      "ou_name",
+      "position_code",
+      "position_name",
+    ],
+    dateCol: [6, 7], */
+    /* path: "/第二批离职人员名单1215.xls",
     fildMaps: [
       "pa_event_name",
       "people_no",
@@ -361,10 +361,11 @@ var handleXlsx4 = async function () {
       "validTo",
       "ou_code",
       "ou_name",
-      "position_code",
-      "position_name",
     ],
-    dateCol: [7, 8],
+    dateCol: [7, 8], */
+    path: "/已离职人员名单1214.xlsx",
+    fildMaps: ["status", "people_no", "people_name"],
+    // dateCol: [6, 7],
   });
   await fnCommon.writeFile("data.json", excel_data);
   excel_data = JSON.parse(excel_data);

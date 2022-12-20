@@ -1,6 +1,8 @@
 {
   "离职": [
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "80000388",
       "people_name": "王国祥",
@@ -11,11 +13,11 @@
       "validFrom": "2022-12-01",
       "validTo": "9999-12-31",
       "ou_code": "13000003",
-      "ou_name": "品牌销售运营管理中心",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "品牌销售运营管理中心"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "80001607",
       "people_name": "郏俊梅",
@@ -26,11 +28,11 @@
       "validFrom": "2022-08-26",
       "validTo": "9999-12-31",
       "ou_code": "10000128",
-      "ou_name": "莱茵北京王府井",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵北京王府井"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "80010022",
       "people_name": "王竹军",
@@ -41,11 +43,11 @@
       "validFrom": "2022-12-01",
       "validTo": "9999-12-31",
       "ou_code": "50012086",
-      "ou_name": "质检组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "质检组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "80010062",
       "people_name": "郝艳军",
@@ -56,11 +58,11 @@
       "validFrom": "2022-12-01",
       "validTo": "9999-12-31",
       "ou_code": "50019953",
-      "ou_name": "出库二组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "出库二组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81000677",
       "people_name": "崔秋芳",
@@ -71,11 +73,11 @@
       "validFrom": "2022-12-07",
       "validTo": "9999-12-31",
       "ou_code": "13000072",
-      "ou_name": "朗姿版师组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿版师组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81005591",
       "people_name": "沈琳琳",
@@ -86,11 +88,11 @@
       "validFrom": "2022-07-23",
       "validTo": "9999-12-31",
       "ou_code": "50010331",
-      "ou_name": "莱茵鞍山新玛特",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵鞍山新玛特"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81007129",
       "people_name": "郭颖辉",
@@ -101,11 +103,11 @@
       "validFrom": "2022-07-01",
       "validTo": "9999-12-31",
       "ou_code": "50014802",
-      "ou_name": "特别服务部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "特别服务部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81011106",
       "people_name": "MINHYO JONG(闵孝贞)",
@@ -116,11 +118,11 @@
       "validFrom": "2022-06-01",
       "validTo": "9999-12-31",
       "ou_code": "13000120",
-      "ou_name": "莱茵梭织二组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵梭织二组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81011378",
       "people_name": "茆年九",
@@ -131,11 +133,11 @@
       "validFrom": "2022-07-23",
       "validTo": "9999-12-31",
       "ou_code": "13000165",
-      "ou_name": "电商生产部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "电商生产部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81011675",
       "people_name": "郭旭光",
@@ -146,11 +148,11 @@
       "validFrom": "2022-07-09",
       "validTo": "9999-12-31",
       "ou_code": "13000215",
-      "ou_name": "子苞米市场部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "子苞米市场部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81013949",
       "people_name": "王琼",
@@ -161,11 +163,11 @@
       "validFrom": "2022-07-27",
       "validTo": "9999-12-31",
       "ou_code": "13000012",
-      "ou_name": "服饰品部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "服饰品部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81016176",
       "people_name": "叶丽娟",
@@ -176,11 +178,11 @@
       "validFrom": "2022-12-01",
       "validTo": "9999-12-31",
       "ou_code": "50014802",
-      "ou_name": "特别服务部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "特别服务部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81017158",
       "people_name": "刘芮",
@@ -191,11 +193,11 @@
       "validFrom": "2022-07-20",
       "validTo": "9999-12-31",
       "ou_code": "13000185",
-      "ou_name": "内容运营组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "内容运营组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81017587",
       "people_name": "曹桂雪",
@@ -206,11 +208,11 @@
       "validFrom": "2022-08-01",
       "validTo": "9999-12-31",
       "ou_code": "10000605",
-      "ou_name": "一车间一组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "一车间一组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81018261",
       "people_name": "刘小英",
@@ -221,11 +223,11 @@
       "validFrom": "2022-07-01",
       "validTo": "9999-12-31",
       "ou_code": "10000615",
-      "ou_name": "二车间十组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "二车间十组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81018306",
       "people_name": "王洋",
@@ -236,11 +238,11 @@
       "validFrom": "2022-08-01",
       "validTo": "9999-12-31",
       "ou_code": "13000209",
-      "ou_name": "子苞米产品研发部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "子苞米产品研发部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81019199",
       "people_name": "刘佳",
@@ -251,11 +253,11 @@
       "validFrom": "2022-07-22",
       "validTo": "9999-12-31",
       "ou_code": "50033220",
-      "ou_name": "朗姿长春国商十二坊",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿长春国商十二坊"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81019240",
       "people_name": "唐生青",
@@ -266,11 +268,11 @@
       "validFrom": "2022-07-23",
       "validTo": "9999-12-31",
       "ou_code": "13000038",
-      "ou_name": "费用组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "费用组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81019439",
       "people_name": "H OUNG SU JUNG（洪秀贞）",
@@ -281,11 +283,11 @@
       "validFrom": "2022-05-06",
       "validTo": "9999-12-31",
       "ou_code": "13000117",
-      "ou_name": "莱茵产品研发部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵产品研发部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81019762",
       "people_name": "单鹏",
@@ -296,11 +298,11 @@
       "validFrom": "2022-07-28",
       "validTo": "9999-12-31",
       "ou_code": "13000091",
-      "ou_name": "朗姿陈列部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿陈列部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81020090",
       "people_name": "王瑞琪",
@@ -311,11 +313,11 @@
       "validFrom": "2022-07-30",
       "validTo": "9999-12-31",
       "ou_code": "13000164",
-      "ou_name": "电商朗姿开发部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "电商朗姿开发部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81020204",
       "people_name": "苏雪然",
@@ -326,11 +328,11 @@
       "validFrom": "2022-07-23",
       "validTo": "9999-12-31",
       "ou_code": "13000170",
-      "ou_name": "天猫子苞米店",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "天猫子苞米店"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81020696",
       "people_name": "单守明",
@@ -341,11 +343,11 @@
       "validFrom": "2022-07-01",
       "validTo": "9999-12-31",
       "ou_code": "50038393",
-      "ou_name": "武清仓返货收货组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "武清仓返货收货组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81020846",
       "people_name": "齐琪",
@@ -356,11 +358,11 @@
       "validFrom": "2022-08-01",
       "validTo": "9999-12-31",
       "ou_code": "13000180",
-      "ou_name": "唯品会渠道",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "唯品会渠道"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81020925",
       "people_name": "白家铭",
@@ -371,11 +373,11 @@
       "validFrom": "2022-07-20",
       "validTo": "9999-12-31",
       "ou_code": "13000194",
-      "ou_name": "奥莱产品研发部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "奥莱产品研发部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81021509",
       "people_name": "胡珍珍",
@@ -386,11 +388,11 @@
       "validFrom": "2022-07-01",
       "validTo": "9999-12-31",
       "ou_code": "50036833",
-      "ou_name": "卓可上海新世界（莱茵）",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "卓可上海新世界（莱茵）"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81021793",
       "people_name": "张幸峰",
@@ -401,11 +403,11 @@
       "validFrom": "2022-07-28",
       "validTo": "9999-12-31",
       "ou_code": "13000208",
-      "ou_name": "子苞米企划部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "子苞米企划部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81021849",
       "people_name": "高佳宁",
@@ -416,11 +418,11 @@
       "validFrom": "2022-10-01",
       "validTo": "9999-12-31",
       "ou_code": "50026586",
-      "ou_name": "兼职组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "兼职组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81022762",
       "people_name": "申姗",
@@ -431,11 +433,11 @@
       "validFrom": "2022-07-01",
       "validTo": "9999-12-31",
       "ou_code": "50038390",
-      "ou_name": "武清出库二组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "武清出库二组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81023411",
       "people_name": "张冉",
@@ -446,11 +448,11 @@
       "validFrom": "2022-07-19",
       "validTo": "9999-12-31",
       "ou_code": "13000209",
-      "ou_name": "子苞米产品研发部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "子苞米产品研发部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81023597",
       "people_name": "郝丽娜",
@@ -461,11 +463,11 @@
       "validFrom": "2022-08-01",
       "validTo": "9999-12-31",
       "ou_code": "50009322",
-      "ou_name": "莱茵苏州美罗高新店",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵苏州美罗高新店"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81024007",
       "people_name": "袁梦",
@@ -476,11 +478,11 @@
       "validFrom": "2022-07-21",
       "validTo": "9999-12-31",
       "ou_code": "50033220",
-      "ou_name": "朗姿长春国商十二坊",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿长春国商十二坊"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81024062",
       "people_name": "庞欣然",
@@ -491,11 +493,11 @@
       "validFrom": "2022-08-01",
       "validTo": "9999-12-31",
       "ou_code": "13000094",
-      "ou_name": "朗姿新零售部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿新零售部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81024201",
       "people_name": "乔雪利",
@@ -506,11 +508,11 @@
       "validFrom": "2022-07-23",
       "validTo": "9999-12-31",
       "ou_code": "50043804",
-      "ou_name": "莱茵太原万象城",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵太原万象城"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81024388",
       "people_name": "孙璐",
@@ -521,11 +523,11 @@
       "validFrom": "2022-07-30",
       "validTo": "9999-12-31",
       "ou_code": "13000069",
-      "ou_name": "朗姿LIAA针织设计室",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿LIAA针织设计室"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81024552",
       "people_name": "杜鑫宇",
@@ -536,11 +538,11 @@
       "validFrom": "2022-08-01",
       "validTo": "9999-12-31",
       "ou_code": "50038390",
-      "ou_name": "武清出库二组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "武清出库二组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81024556",
       "people_name": "段招平",
@@ -551,11 +553,11 @@
       "validFrom": "2022-08-01",
       "validTo": "9999-12-31",
       "ou_code": "13000125",
-      "ou_name": "莱茵开发部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵开发部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81025143",
       "people_name": "陈聪荣",
@@ -566,11 +568,11 @@
       "validFrom": "2022-07-31",
       "validTo": "9999-12-31",
       "ou_code": "50042600",
-      "ou_name": "电商莱茵开发部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "电商莱茵开发部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81025174",
       "people_name": "陈明",
@@ -581,11 +583,11 @@
       "validFrom": "2022-07-30",
       "validTo": "9999-12-31",
       "ou_code": "13000055",
-      "ou_name": "HRBP中心",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "HRBP中心"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81025323",
       "people_name": "赵银",
@@ -596,11 +598,11 @@
       "validFrom": "2022-12-01",
       "validTo": "9999-12-31",
       "ou_code": "50050174",
-      "ou_name": "武清出库四组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "武清出库四组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81025678",
       "people_name": "乔艳梅",
@@ -611,11 +613,11 @@
       "validFrom": "2022-12-06",
       "validTo": "9999-12-31",
       "ou_code": "50045077",
-      "ou_name": "莱茵济宁贵和购物中心",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵济宁贵和购物中心"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81025731",
       "people_name": "叶琴",
@@ -626,11 +628,11 @@
       "validFrom": "2022-07-16",
       "validTo": "9999-12-31",
       "ou_code": "50008468",
-      "ou_name": "莱茵成都环球乐天百货",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵成都环球乐天百货"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81025802",
       "people_name": "李娜",
@@ -641,11 +643,11 @@
       "validFrom": "2022-07-20",
       "validTo": "9999-12-31",
       "ou_code": "13000036",
-      "ou_name": "财务管理部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "财务管理部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81025888",
       "people_name": "王嘉雯",
@@ -656,11 +658,11 @@
       "validFrom": "2022-08-01",
       "validTo": "9999-12-31",
       "ou_code": "13000103",
-      "ou_name": "朗姿江浙分公司-无锡",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿江浙分公司-无锡"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81025893",
       "people_name": "刘童",
@@ -671,11 +673,11 @@
       "validFrom": "2022-12-08",
       "validTo": "9999-12-31",
       "ou_code": "13000163",
-      "ou_name": "电商莱茵产品研发部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "电商莱茵产品研发部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81025896",
       "people_name": "侯钦华",
@@ -686,11 +688,11 @@
       "validFrom": "2022-07-16",
       "validTo": "9999-12-31",
       "ou_code": "13000103",
-      "ou_name": "朗姿江浙分公司-无锡",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿江浙分公司-无锡"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81026035",
       "people_name": "刘静雪",
@@ -701,11 +703,11 @@
       "validFrom": "2022-08-01",
       "validTo": "9999-12-31",
       "ou_code": "10000613",
-      "ou_name": "二车间八组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "二车间八组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81026125",
       "people_name": "刘立梅",
@@ -716,11 +718,11 @@
       "validFrom": "2022-07-21",
       "validTo": "9999-12-31",
       "ou_code": "50043682",
-      "ou_name": "MOJO北京东方广场",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "MOJO北京东方广场"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81026546",
       "people_name": "李欣昱",
@@ -731,11 +733,11 @@
       "validFrom": "2022-07-30",
       "validTo": "9999-12-31",
       "ou_code": "13000121",
-      "ou_name": "莱茵梭织三组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵梭织三组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81026569",
       "people_name": "王翠",
@@ -746,11 +748,11 @@
       "validFrom": "2022-07-16",
       "validTo": "9999-12-31",
       "ou_code": "50046591",
-      "ou_name": "莱茵重庆龙湖时代天街",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵重庆龙湖时代天街"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81026587",
       "people_name": "王思雨",
@@ -761,11 +763,11 @@
       "validFrom": "2022-09-01",
       "validTo": "9999-12-31",
       "ou_code": "13000169",
-      "ou_name": "天猫莱茵店",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "天猫莱茵店"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81026626",
       "people_name": "张金艳",
@@ -776,11 +778,11 @@
       "validFrom": "2022-10-01",
       "validTo": "9999-12-31",
       "ou_code": "50029269",
-      "ou_name": "朗姿北京荟聚",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿北京荟聚"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81026691",
       "people_name": "彭桦琳",
@@ -791,11 +793,11 @@
       "validFrom": "2022-10-21",
       "validTo": "9999-12-31",
       "ou_code": "13000013",
-      "ou_name": "产品调研部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "产品调研部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81026718",
       "people_name": "廖基娟",
@@ -806,11 +808,11 @@
       "validFrom": "2022-12-01",
       "validTo": "9999-12-31",
       "ou_code": "50025844",
-      "ou_name": "朗姿杭州银泰百货庆春店",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿杭州银泰百货庆春店"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81026726",
       "people_name": "牛玉梅",
@@ -821,11 +823,11 @@
       "validFrom": "2022-12-01",
       "validTo": "9999-12-31",
       "ou_code": "50011346",
-      "ou_name": "莱茵西安开元",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵西安开元"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81026751",
       "people_name": "王玉英",
@@ -836,11 +838,11 @@
       "validFrom": "2022-11-25",
       "validTo": "9999-12-31",
       "ou_code": "50042119",
-      "ou_name": "朗姿青岛金狮广场",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿青岛金狮广场"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81026781",
       "people_name": "李丽霞",
@@ -851,11 +853,11 @@
       "validFrom": "2022-09-27",
       "validTo": "9999-12-31",
       "ou_code": "50032256",
-      "ou_name": "子苞米石家庄先天下",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "子苞米石家庄先天下"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81026804",
       "people_name": "毛文玲",
@@ -866,11 +868,11 @@
       "validFrom": "2022-10-01",
       "validTo": "9999-12-31",
       "ou_code": "13000223",
-      "ou_name": "ETTOI产品研发部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "ETTOI产品研发部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81026835",
       "people_name": "周敬航",
@@ -881,11 +883,11 @@
       "validFrom": "2022-09-01",
       "validTo": "9999-12-31",
       "ou_code": "50045632",
-      "ou_name": "子苞米新零售部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "子苞米新零售部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81026862",
       "people_name": "赵利丽",
@@ -896,11 +898,11 @@
       "validFrom": "2022-11-11",
       "validTo": "9999-12-31",
       "ou_code": "50031970",
-      "ou_name": "朗姿太原万象城",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿太原万象城"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81026865",
       "people_name": "康宏",
@@ -911,11 +913,11 @@
       "validFrom": "2022-11-12",
       "validTo": "9999-12-31",
       "ou_code": "50046594",
-      "ou_name": "悦朗姿沈阳中兴",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "悦朗姿沈阳中兴"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81026939",
       "people_name": "田雪",
@@ -926,11 +928,11 @@
       "validFrom": "2022-09-01",
       "validTo": "9999-12-31",
       "ou_code": "13000168",
-      "ou_name": "天猫朗姿旗舰店",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "天猫朗姿旗舰店"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81026971",
       "people_name": "高含",
@@ -941,11 +943,11 @@
       "validFrom": "2022-09-01",
       "validTo": "9999-12-31",
       "ou_code": "13000168",
-      "ou_name": "天猫朗姿旗舰店",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "天猫朗姿旗舰店"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027006",
       "people_name": "冯奇",
@@ -956,11 +958,11 @@
       "validFrom": "2022-12-01",
       "validTo": "9999-12-31",
       "ou_code": "50047310",
-      "ou_name": "莱茵重庆世纪新都",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵重庆世纪新都"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027028",
       "people_name": "张慧敏",
@@ -971,11 +973,11 @@
       "validFrom": "2022-09-01",
       "validTo": "9999-12-31",
       "ou_code": "13000168",
-      "ou_name": "天猫朗姿旗舰店",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "天猫朗姿旗舰店"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027032",
       "people_name": "欧阳小燕",
@@ -986,11 +988,11 @@
       "validFrom": "2022-11-16",
       "validTo": "9999-12-31",
       "ou_code": "50032399",
-      "ou_name": "朗姿成都乐天",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿成都乐天"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027073",
       "people_name": "张颖",
@@ -1001,11 +1003,11 @@
       "validFrom": "2022-09-01",
       "validTo": "9999-12-31",
       "ou_code": "13000168",
-      "ou_name": "天猫朗姿旗舰店",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "天猫朗姿旗舰店"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027076",
       "people_name": "彭焱",
@@ -1016,11 +1018,11 @@
       "validFrom": "2022-10-30",
       "validTo": "9999-12-31",
       "ou_code": "13000117",
-      "ou_name": "莱茵产品研发部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵产品研发部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027146",
       "people_name": "许营",
@@ -1031,11 +1033,11 @@
       "validFrom": "2022-11-01",
       "validTo": "9999-12-31",
       "ou_code": "10000198",
-      "ou_name": "莱茵长春欧亚",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵长春欧亚"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027148",
       "people_name": "王春燕",
@@ -1046,11 +1048,11 @@
       "validFrom": "2022-11-07",
       "validTo": "9999-12-31",
       "ou_code": "50038959",
-      "ou_name": "朗姿福州万象城",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿福州万象城"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027232",
       "people_name": "李丽姝",
@@ -1061,11 +1063,11 @@
       "validFrom": "2022-10-19",
       "validTo": "9999-12-31",
       "ou_code": "50036013",
-      "ou_name": "朗姿沈阳恒隆广场",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿沈阳恒隆广场"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027234",
       "people_name": "戴士红",
@@ -1076,11 +1078,11 @@
       "validFrom": "2022-11-12",
       "validTo": "9999-12-31",
       "ou_code": "50025404",
-      "ou_name": "莱茵无锡商业大厦",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵无锡商业大厦"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027235",
       "people_name": "韩玉花",
@@ -1091,11 +1093,11 @@
       "validFrom": "2022-12-01",
       "validTo": "9999-12-31",
       "ou_code": "50006921",
-      "ou_name": "莱茵南京新百",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵南京新百"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027310",
       "people_name": "王娟",
@@ -1106,11 +1108,11 @@
       "validFrom": "2022-12-01",
       "validTo": "9999-12-31",
       "ou_code": "50033650",
-      "ou_name": "子苞米长沙时代奥莱",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "子苞米长沙时代奥莱"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027326",
       "people_name": "廖涛",
@@ -1121,11 +1123,11 @@
       "validFrom": "2022-10-01",
       "validTo": "9999-12-31",
       "ou_code": "13000141",
-      "ou_name": "莱茵新零售部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵新零售部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027344",
       "people_name": "姜微微",
@@ -1136,11 +1138,11 @@
       "validFrom": "2022-09-01",
       "validTo": "9999-12-31",
       "ou_code": "13000168",
-      "ou_name": "天猫朗姿旗舰店",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "天猫朗姿旗舰店"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027374",
       "people_name": "郭爽",
@@ -1151,11 +1153,11 @@
       "validFrom": "2022-11-01",
       "validTo": "9999-12-31",
       "ou_code": "50026252",
-      "ou_name": "莱茵滨州银座",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵滨州银座"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027377",
       "people_name": "于红丽",
@@ -1166,11 +1168,11 @@
       "validFrom": "2022-11-01",
       "validTo": "9999-12-31",
       "ou_code": "50028754",
-      "ou_name": "莱茵大连锦辉购物广场",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵大连锦辉购物广场"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027390",
       "people_name": "徐珍",
@@ -1181,11 +1183,11 @@
       "validFrom": "2022-11-01",
       "validTo": "9999-12-31",
       "ou_code": "50038959",
-      "ou_name": "朗姿福州万象城",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿福州万象城"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027435",
       "people_name": "樊丽丹",
@@ -1196,11 +1198,11 @@
       "validFrom": "2022-09-20",
       "validTo": "9999-12-31",
       "ou_code": "50021090",
-      "ou_name": "莱茵长春欧亚三环",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵长春欧亚三环"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027436",
       "people_name": "陈蓉",
@@ -1211,11 +1213,11 @@
       "validFrom": "2022-10-16",
       "validTo": "9999-12-31",
       "ou_code": "50019609",
-      "ou_name": "第五季南京汤山百联奥莱",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "第五季南京汤山百联奥莱"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027450",
       "people_name": "郑伦利",
@@ -1226,11 +1228,11 @@
       "validFrom": "2022-10-22",
       "validTo": "9999-12-31",
       "ou_code": "50042600",
-      "ou_name": "电商莱茵开发部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "电商莱茵开发部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027467",
       "people_name": "戴睿",
@@ -1241,11 +1243,11 @@
       "validFrom": "2022-09-26",
       "validTo": "9999-12-31",
       "ou_code": "13000163",
-      "ou_name": "电商莱茵产品研发部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "电商莱茵产品研发部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027470",
       "people_name": "曾丹",
@@ -1256,11 +1258,11 @@
       "validFrom": "2022-10-01",
       "validTo": "9999-12-31",
       "ou_code": "50041398",
-      "ou_name": "第五季贵阳杉杉奥莱",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "第五季贵阳杉杉奥莱"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027507",
       "people_name": "王梓琪",
@@ -1271,11 +1273,11 @@
       "validFrom": "2022-11-08",
       "validTo": "9999-12-31",
       "ou_code": "10000322",
-      "ou_name": "莱茵成都王府井科华路店",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵成都王府井科华路店"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027539",
       "people_name": "刘媛媛",
@@ -1286,11 +1288,11 @@
       "validFrom": "2022-09-30",
       "validTo": "9999-12-31",
       "ou_code": "13000168",
-      "ou_name": "天猫朗姿旗舰店",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "天猫朗姿旗舰店"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027545",
       "people_name": "盖金妮",
@@ -1301,11 +1303,11 @@
       "validFrom": "2022-11-21",
       "validTo": "9999-12-31",
       "ou_code": "50036374",
-      "ou_name": "莱茵大连柏威年",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵大连柏威年"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027550",
       "people_name": "苏布德",
@@ -1316,11 +1318,11 @@
       "validFrom": "2022-10-01",
       "validTo": "9999-12-31",
       "ou_code": "13000220",
-      "ou_name": "ETTOI",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "ETTOI"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027553",
       "people_name": "朱玉蓉",
@@ -1331,11 +1333,11 @@
       "validFrom": "2022-11-16",
       "validTo": "9999-12-31",
       "ou_code": "13000168",
-      "ou_name": "天猫朗姿旗舰店",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "天猫朗姿旗舰店"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027560",
       "people_name": "季雨菲",
@@ -1346,11 +1348,11 @@
       "validFrom": "2022-11-19",
       "validTo": "9999-12-31",
       "ou_code": "13000130",
-      "ou_name": "卓可产品研发部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "卓可产品研发部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027574",
       "people_name": "陈佳利",
@@ -1361,11 +1363,11 @@
       "validFrom": "2022-10-27",
       "validTo": "9999-12-31",
       "ou_code": "50049869",
-      "ou_name": "电商商品企划部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "电商商品企划部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027579",
       "people_name": "夏丽君",
@@ -1376,11 +1378,11 @@
       "validFrom": "2022-09-14",
       "validTo": "9999-12-31",
       "ou_code": "50049886",
-      "ou_name": "生产跟单组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "生产跟单组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027590",
       "people_name": "史培培",
@@ -1391,11 +1393,11 @@
       "validFrom": "2022-11-01",
       "validTo": "9999-12-31",
       "ou_code": "13000084",
-      "ou_name": "朗姿货品部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿货品部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027605",
       "people_name": "陈雅丽",
@@ -1406,11 +1408,11 @@
       "validFrom": "2022-12-01",
       "validTo": "9999-12-31",
       "ou_code": "13000018",
-      "ou_name": "辅料资材采购部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "辅料资材采购部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027606",
       "people_name": "周玉飞",
@@ -1421,11 +1423,11 @@
       "validFrom": "2022-10-13",
       "validTo": "9999-12-31",
       "ou_code": "50036091",
-      "ou_name": "悦朗姿苏州石路国际",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "悦朗姿苏州石路国际"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027616",
       "people_name": "龙然",
@@ -1436,11 +1438,11 @@
       "validFrom": "2022-09-01",
       "validTo": "9999-12-31",
       "ou_code": "13000180",
-      "ou_name": "唯品会渠道",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "唯品会渠道"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027627",
       "people_name": "郭雨暄",
@@ -1451,11 +1453,11 @@
       "validFrom": "2022-11-29",
       "validTo": "9999-12-31",
       "ou_code": "50049869",
-      "ou_name": "电商商品企划部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "电商商品企划部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027628",
       "people_name": "戴印来",
@@ -1466,11 +1468,11 @@
       "validFrom": "2022-09-27",
       "validTo": "9999-12-31",
       "ou_code": "50042600",
-      "ou_name": "电商莱茵开发部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "电商莱茵开发部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027631",
       "people_name": "韩文影",
@@ -1481,11 +1483,11 @@
       "validFrom": "2022-11-01",
       "validTo": "9999-12-31",
       "ou_code": "50016926",
-      "ou_name": "第五季天津佛罗伦萨小镇（闭店）",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "第五季天津佛罗伦萨小镇（闭店）"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027632",
       "people_name": "李文玉",
@@ -1496,11 +1498,11 @@
       "validFrom": "2022-11-01",
       "validTo": "9999-12-31",
       "ou_code": "50016926",
-      "ou_name": "第五季天津佛罗伦萨小镇（闭店）",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "第五季天津佛罗伦萨小镇（闭店）"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027633",
       "people_name": "孙娟娟",
@@ -1511,11 +1513,11 @@
       "validFrom": "2022-11-01",
       "validTo": "9999-12-31",
       "ou_code": "50016926",
-      "ou_name": "第五季天津佛罗伦萨小镇（闭店）",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "第五季天津佛罗伦萨小镇（闭店）"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027737",
       "people_name": "卫欣瑶",
@@ -1526,11 +1528,11 @@
       "validFrom": "2022-10-16",
       "validTo": "9999-12-31",
       "ou_code": "50018319",
-      "ou_name": "朗姿西安赛格",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿西安赛格"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027771",
       "people_name": "宁露",
@@ -1541,11 +1543,11 @@
       "validFrom": "2022-09-17",
       "validTo": "9999-12-31",
       "ou_code": "50032105",
-      "ou_name": "朗姿常州泰富（闭店）",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿常州泰富（闭店）"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027797",
       "people_name": "杨亚妮",
@@ -1556,11 +1558,11 @@
       "validFrom": "2022-10-04",
       "validTo": "9999-12-31",
       "ou_code": "50038960",
-      "ou_name": "第五季西安赛特奥莱莱茵店",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "第五季西安赛特奥莱莱茵店"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027815",
       "people_name": "闫欣悦",
@@ -1571,11 +1573,11 @@
       "validFrom": "2022-08-07",
       "validTo": "9999-12-31",
       "ou_code": "50045632",
-      "ou_name": "子苞米新零售部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "子苞米新零售部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027831",
       "people_name": "聂佳维",
@@ -1586,11 +1588,11 @@
       "validFrom": "2022-11-05",
       "validTo": "9999-12-31",
       "ou_code": "50045634",
-      "ou_name": "奥莱新零售部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "奥莱新零售部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027845",
       "people_name": "王思雪",
@@ -1601,11 +1603,11 @@
       "validFrom": "2022-11-01",
       "validTo": "9999-12-31",
       "ou_code": "50043682",
-      "ou_name": "MOJO北京东方广场",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "MOJO北京东方广场"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027846",
       "people_name": "王金玲",
@@ -1616,11 +1618,11 @@
       "validFrom": "2022-09-27",
       "validTo": "9999-12-31",
       "ou_code": "50028754",
-      "ou_name": "莱茵大连锦辉购物广场",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵大连锦辉购物广场"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027865",
       "people_name": "郭微",
@@ -1631,11 +1633,11 @@
       "validFrom": "2022-09-30",
       "validTo": "9999-12-31",
       "ou_code": "50022763",
-      "ou_name": "第五季长春赛特奥莱",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "第五季长春赛特奥莱"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027913",
       "people_name": "肖宇航",
@@ -1646,11 +1648,11 @@
       "validFrom": "2022-10-25",
       "validTo": "9999-12-31",
       "ou_code": "13000215",
-      "ou_name": "子苞米市场部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "子苞米市场部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027917",
       "people_name": "刘丽娜",
@@ -1661,11 +1663,11 @@
       "validFrom": "2022-12-01",
       "validTo": "9999-12-31",
       "ou_code": "50043804",
-      "ou_name": "莱茵太原万象城",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵太原万象城"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027932",
       "people_name": "崔佳瑛",
@@ -1676,11 +1678,11 @@
       "validFrom": "2022-11-01",
       "validTo": "9999-12-31",
       "ou_code": "13000227",
-      "ou_name": "ETTOI货品部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "ETTOI货品部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027943",
       "people_name": "陈园园",
@@ -1691,11 +1693,11 @@
       "validFrom": "2022-09-26",
       "validTo": "9999-12-31",
       "ou_code": "50036303",
-      "ou_name": "MOJO宁波万象城",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "MOJO宁波万象城"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027944",
       "people_name": "杨云霞",
@@ -1706,11 +1708,11 @@
       "validFrom": "2022-10-11",
       "validTo": "9999-12-31",
       "ou_code": "50035301",
-      "ou_name": "莱茵宁波万象城",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵宁波万象城"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027945",
       "people_name": "李亚娟",
@@ -1721,11 +1723,11 @@
       "validFrom": "2022-10-19",
       "validTo": "9999-12-31",
       "ou_code": "50027251",
-      "ou_name": "莱茵大庆新玛特",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵大庆新玛特"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027946",
       "people_name": "胡建",
@@ -1736,11 +1738,11 @@
       "validFrom": "2022-10-01",
       "validTo": "9999-12-31",
       "ou_code": "10000229",
-      "ou_name": "莱茵济南银座商城",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵济南银座商城"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027975",
       "people_name": "李翠",
@@ -1751,11 +1753,11 @@
       "validFrom": "2022-09-10",
       "validTo": "9999-12-31",
       "ou_code": "50045632",
-      "ou_name": "子苞米新零售部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "子苞米新零售部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81027990",
       "people_name": "宋雪玲",
@@ -1766,11 +1768,11 @@
       "validFrom": "2022-12-09",
       "validTo": "9999-12-31",
       "ou_code": "50028754",
-      "ou_name": "莱茵大连锦辉购物广场",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵大连锦辉购物广场"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028005",
       "people_name": "赵倩",
@@ -1781,11 +1783,11 @@
       "validFrom": "2022-09-17",
       "validTo": "9999-12-31",
       "ou_code": "50029239",
-      "ou_name": "子苞米石家庄北国商城（闭店）",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "子苞米石家庄北国商城（闭店）"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028006",
       "people_name": "陈静",
@@ -1796,11 +1798,11 @@
       "validFrom": "2022-10-28",
       "validTo": "9999-12-31",
       "ou_code": "13000012",
-      "ou_name": "服饰品部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "服饰品部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028012",
       "people_name": "刘冬野",
@@ -1811,11 +1813,11 @@
       "validFrom": "2022-11-01",
       "validTo": "9999-12-31",
       "ou_code": "10000483",
-      "ou_name": "第五季沈阳奥莱",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "第五季沈阳奥莱"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028014",
       "people_name": "栾吉艳",
@@ -1826,11 +1828,11 @@
       "validFrom": "2022-11-24",
       "validTo": "9999-12-31",
       "ou_code": "50048408",
-      "ou_name": "朗姿青岛万象城",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿青岛万象城"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028022",
       "people_name": "徐敏",
@@ -1841,11 +1843,11 @@
       "validFrom": "2022-10-17",
       "validTo": "9999-12-31",
       "ou_code": "50049793",
-      "ou_name": "悦朗姿宜宾叙府",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "悦朗姿宜宾叙府"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028033",
       "people_name": "马旭光",
@@ -1856,11 +1858,11 @@
       "validFrom": "2022-10-01",
       "validTo": "9999-12-31",
       "ou_code": "13000091",
-      "ou_name": "朗姿陈列部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿陈列部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028046",
       "people_name": "郑丽娟",
@@ -1871,11 +1873,11 @@
       "validFrom": "2022-12-03",
       "validTo": "9999-12-31",
       "ou_code": "10000606",
-      "ou_name": "一车间二组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "一车间二组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028049",
       "people_name": "向爱琼",
@@ -1886,11 +1888,11 @@
       "validFrom": "2022-12-06",
       "validTo": "9999-12-31",
       "ou_code": "10000613",
-      "ou_name": "二车间八组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "二车间八组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028050",
       "people_name": "钱坤",
@@ -1901,11 +1903,11 @@
       "validFrom": "2022-11-17",
       "validTo": "9999-12-31",
       "ou_code": "10000102",
-      "ou_name": "朗姿北京中友",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿北京中友"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028112",
       "people_name": "孟宪宪",
@@ -1916,11 +1918,11 @@
       "validFrom": "2022-09-16",
       "validTo": "9999-12-31",
       "ou_code": "50028851",
-      "ou_name": "子苞米郑州丹尼斯一天地",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "子苞米郑州丹尼斯一天地"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028113",
       "people_name": "刘颖",
@@ -1931,11 +1933,11 @@
       "validFrom": "2022-09-10",
       "validTo": "9999-12-31",
       "ou_code": "50016926",
-      "ou_name": "第五季天津佛罗伦萨小镇（闭店）",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "第五季天津佛罗伦萨小镇（闭店）"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028115",
       "people_name": "任春霞",
@@ -1946,11 +1948,11 @@
       "validFrom": "2022-11-21",
       "validTo": "9999-12-31",
       "ou_code": "10000122",
-      "ou_name": "莱茵北京当代商城",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵北京当代商城"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028152",
       "people_name": "孙贝贝",
@@ -1961,11 +1963,11 @@
       "validFrom": "2022-10-01",
       "validTo": "9999-12-31",
       "ou_code": "50026252",
-      "ou_name": "莱茵滨州银座",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵滨州银座"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028174",
       "people_name": "杨一",
@@ -1976,11 +1978,11 @@
       "validFrom": "2022-09-01",
       "validTo": "9999-12-31",
       "ou_code": "13000164",
-      "ou_name": "电商朗姿开发部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "电商朗姿开发部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028178",
       "people_name": "韩蕊",
@@ -1991,11 +1993,11 @@
       "validFrom": "2022-11-01",
       "validTo": "9999-12-31",
       "ou_code": "50016926",
-      "ou_name": "第五季天津佛罗伦萨小镇（闭店）",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "第五季天津佛罗伦萨小镇（闭店）"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028183",
       "people_name": "何贝",
@@ -2006,11 +2008,11 @@
       "validFrom": "2022-10-10",
       "validTo": "9999-12-31",
       "ou_code": "50042027",
-      "ou_name": "ETTOI武汉万象城",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "ETTOI武汉万象城"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028189",
       "people_name": "郑雪佳",
@@ -2021,11 +2023,11 @@
       "validFrom": "2022-10-21",
       "validTo": "9999-12-31",
       "ou_code": "13000057",
-      "ou_name": "薪酬管理组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "薪酬管理组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028190",
       "people_name": "封英",
@@ -2036,11 +2038,11 @@
       "validFrom": "2022-11-01",
       "validTo": "9999-12-31",
       "ou_code": "13000039",
-      "ou_name": "应收组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "应收组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028211",
       "people_name": "刘倩",
@@ -2051,11 +2053,11 @@
       "validFrom": "2022-11-01",
       "validTo": "9999-12-31",
       "ou_code": "50050251",
-      "ou_name": "悦朗姿设计一组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "悦朗姿设计一组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028215",
       "people_name": "张影",
@@ -2066,11 +2068,11 @@
       "validFrom": "2022-10-01",
       "validTo": "9999-12-31",
       "ou_code": "50009680",
-      "ou_name": "莱茵大庆百货大楼",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵大庆百货大楼"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028218",
       "people_name": "焦艳华",
@@ -2081,11 +2083,11 @@
       "validFrom": "2022-10-01",
       "validTo": "9999-12-31",
       "ou_code": "50028754",
-      "ou_name": "莱茵大连锦辉购物广场",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵大连锦辉购物广场"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028227",
       "people_name": "李英",
@@ -2096,11 +2098,11 @@
       "validFrom": "2022-09-25",
       "validTo": "9999-12-31",
       "ou_code": "50025844",
-      "ou_name": "朗姿杭州银泰百货庆春店",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿杭州银泰百货庆春店"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028310",
       "people_name": "刘霞",
@@ -2111,11 +2113,11 @@
       "validFrom": "2022-12-01",
       "validTo": "9999-12-31",
       "ou_code": "10000606",
-      "ou_name": "一车间二组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "一车间二组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028328",
       "people_name": "高平",
@@ -2126,11 +2128,11 @@
       "validFrom": "2022-10-01",
       "validTo": "9999-12-31",
       "ou_code": "10000232",
-      "ou_name": "莱茵南京金鹰国际",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵南京金鹰国际"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028330",
       "people_name": "陈聪聪",
@@ -2141,11 +2143,11 @@
       "validFrom": "2022-09-27",
       "validTo": "9999-12-31",
       "ou_code": "13000171",
-      "ou_name": "天猫outlets店",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "天猫outlets店"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028352",
       "people_name": "吴金慧",
@@ -2156,11 +2158,11 @@
       "validFrom": "2022-11-29",
       "validTo": "9999-12-31",
       "ou_code": "10000478",
-      "ou_name": "第五季上海清浦奥莱",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "第五季上海清浦奥莱"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028401",
       "people_name": "高丽",
@@ -2171,11 +2173,11 @@
       "validFrom": "2022-10-11",
       "validTo": "9999-12-31",
       "ou_code": "50029483",
-      "ou_name": "阿咖邦成都伊藤洋华堂高新店",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "阿咖邦成都伊藤洋华堂高新店"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028422",
       "people_name": "刘琳",
@@ -2186,11 +2188,11 @@
       "validFrom": "2022-10-01",
       "validTo": "9999-12-31",
       "ou_code": "13000069",
-      "ou_name": "朗姿LIAA针织设计室",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿LIAA针织设计室"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028425",
       "people_name": "孙启凯",
@@ -2201,11 +2203,11 @@
       "validFrom": "2022-10-01",
       "validTo": "9999-12-31",
       "ou_code": "50042600",
-      "ou_name": "电商莱茵开发部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "电商莱茵开发部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028427",
       "people_name": "阮佳",
@@ -2216,11 +2218,11 @@
       "validFrom": "2022-09-01",
       "validTo": "9999-12-31",
       "ou_code": "13000141",
-      "ou_name": "莱茵新零售部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵新零售部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028432",
       "people_name": "马媛",
@@ -2231,11 +2233,11 @@
       "validFrom": "2022-09-22",
       "validTo": "9999-12-31",
       "ou_code": "50049860",
-      "ou_name": "悦朗姿菏泽银座",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "悦朗姿菏泽银座"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028434",
       "people_name": "温红雨",
@@ -2246,11 +2248,11 @@
       "validFrom": "2022-10-01",
       "validTo": "9999-12-31",
       "ou_code": "50042122",
-      "ou_name": "MOJO吉林欧亚",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "MOJO吉林欧亚"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028448",
       "people_name": "王雨竹",
@@ -2261,11 +2263,11 @@
       "validFrom": "2022-11-09",
       "validTo": "9999-12-31",
       "ou_code": "13000162",
-      "ou_name": "电商朗姿PINK组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "电商朗姿PINK组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028460",
       "people_name": "任娜",
@@ -2276,11 +2278,11 @@
       "validFrom": "2022-10-17",
       "validTo": "9999-12-31",
       "ou_code": "10000483",
-      "ou_name": "第五季沈阳奥莱",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "第五季沈阳奥莱"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028461",
       "people_name": "徐怡",
@@ -2291,11 +2293,11 @@
       "validFrom": "2022-09-24",
       "validTo": "9999-12-31",
       "ou_code": "50038958",
-      "ou_name": "朗姿成都王府井科华",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿成都王府井科华"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028510",
       "people_name": "赵艳妮",
@@ -2306,11 +2308,11 @@
       "validFrom": "2022-10-23",
       "validTo": "9999-12-31",
       "ou_code": "50036374",
-      "ou_name": "莱茵大连柏威年",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵大连柏威年"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028562",
       "people_name": "黄德金",
@@ -2321,11 +2323,11 @@
       "validFrom": "2022-12-01",
       "validTo": "9999-12-31",
       "ou_code": "13000164",
-      "ou_name": "电商朗姿开发部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "电商朗姿开发部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028574",
       "people_name": "李小燕",
@@ -2336,11 +2338,11 @@
       "validFrom": "2022-10-01",
       "validTo": "9999-12-31",
       "ou_code": "50027371",
-      "ou_name": "朗姿福州东二环泰禾广场",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿福州东二环泰禾广场"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028576",
       "people_name": "赵运旭",
@@ -2351,11 +2353,11 @@
       "validFrom": "2022-09-03",
       "validTo": "9999-12-31",
       "ou_code": "13000073",
-      "ou_name": "朗姿样衣组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿样衣组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028580",
       "people_name": "白坤",
@@ -2366,11 +2368,11 @@
       "validFrom": "2022-10-01",
       "validTo": "9999-12-31",
       "ou_code": "50045632",
-      "ou_name": "子苞米新零售部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "子苞米新零售部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028608",
       "people_name": "熊秀花",
@@ -2381,11 +2383,11 @@
       "validFrom": "2022-11-08",
       "validTo": "9999-12-31",
       "ou_code": "10000615",
-      "ou_name": "二车间十组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "二车间十组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028631",
       "people_name": "代士盼",
@@ -2396,11 +2398,11 @@
       "validFrom": "2022-11-01",
       "validTo": "9999-12-31",
       "ou_code": "50047901",
-      "ou_name": "朗姿上海万象城",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿上海万象城"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028633",
       "people_name": "黄金娟",
@@ -2411,11 +2413,11 @@
       "validFrom": "2022-09-14",
       "validTo": "9999-12-31",
       "ou_code": "50046590",
-      "ou_name": "ETTOI苏州久光百货",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "ETTOI苏州久光百货"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028659",
       "people_name": "项怀红",
@@ -2426,11 +2428,11 @@
       "validFrom": "2022-10-19",
       "validTo": "9999-12-31",
       "ou_code": "10000478",
-      "ou_name": "第五季上海清浦奥莱",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "第五季上海清浦奥莱"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028668",
       "people_name": "苏慧",
@@ -2441,11 +2443,11 @@
       "validFrom": "2022-10-01",
       "validTo": "9999-12-31",
       "ou_code": "10000478",
-      "ou_name": "第五季上海清浦奥莱",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "第五季上海清浦奥莱"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028706",
       "people_name": "梁翠英",
@@ -2456,11 +2458,11 @@
       "validFrom": "2022-10-05",
       "validTo": "9999-12-31",
       "ou_code": "10000298",
-      "ou_name": "朗姿福州东百东街口店",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿福州东百东街口店"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028711",
       "people_name": "栾艳",
@@ -2471,11 +2473,11 @@
       "validFrom": "2022-11-01",
       "validTo": "9999-12-31",
       "ou_code": "10000478",
-      "ou_name": "第五季上海清浦奥莱",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "第五季上海清浦奥莱"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028719",
       "people_name": "刘红梅",
@@ -2486,11 +2488,11 @@
       "validFrom": "2022-09-22",
       "validTo": "9999-12-31",
       "ou_code": "50042122",
-      "ou_name": "MOJO吉林欧亚",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "MOJO吉林欧亚"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028722",
       "people_name": "曾敏艳",
@@ -2501,11 +2503,11 @@
       "validFrom": "2022-09-17",
       "validTo": "9999-12-31",
       "ou_code": "50022852",
-      "ou_name": "第五季长沙百联奥莱（闭店）",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "第五季长沙百联奥莱（闭店）"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028723",
       "people_name": "胡云",
@@ -2516,11 +2518,11 @@
       "validFrom": "2022-09-16",
       "validTo": "9999-12-31",
       "ou_code": "50022852",
-      "ou_name": "第五季长沙百联奥莱（闭店）",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "第五季长沙百联奥莱（闭店）"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028724",
       "people_name": "马超",
@@ -2531,11 +2533,11 @@
       "validFrom": "2022-11-01",
       "validTo": "9999-12-31",
       "ou_code": "13000127",
-      "ou_name": "莱茵样衣组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "莱茵样衣组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028725",
       "people_name": "刘小春",
@@ -2546,11 +2548,11 @@
       "validFrom": "2022-11-01",
       "validTo": "9999-12-31",
       "ou_code": "50051906",
-      "ou_name": "兼职组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "兼职组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028730",
       "people_name": "王程锦",
@@ -2561,11 +2563,11 @@
       "validFrom": "2022-11-01",
       "validTo": "9999-12-31",
       "ou_code": "50051906",
-      "ou_name": "兼职组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "兼职组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028759",
       "people_name": "刘艳红",
@@ -2576,11 +2578,11 @@
       "validFrom": "2022-11-09",
       "validTo": "9999-12-31",
       "ou_code": "10000615",
-      "ou_name": "二车间十组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "二车间十组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028766",
       "people_name": "朱玉伟",
@@ -2591,11 +2593,11 @@
       "validFrom": "2022-10-06",
       "validTo": "9999-12-31",
       "ou_code": "50033220",
-      "ou_name": "朗姿长春国商十二坊",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿长春国商十二坊"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028768",
       "people_name": "杜其",
@@ -2606,11 +2608,11 @@
       "validFrom": "2022-12-05",
       "validTo": "9999-12-31",
       "ou_code": "10000615",
-      "ou_name": "二车间十组",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "二车间十组"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028776",
       "people_name": "张莲花",
@@ -2621,11 +2623,11 @@
       "validFrom": "2022-10-22",
       "validTo": "9999-12-31",
       "ou_code": "10000160",
-      "ou_name": "朗姿苏州美罗观前店",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿苏州美罗观前店"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028788",
       "people_name": "王桃花",
@@ -2636,11 +2638,11 @@
       "validFrom": "2022-10-07",
       "validTo": "9999-12-31",
       "ou_code": "50039738",
-      "ou_name": "第五季杭州百联奥莱",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "第五季杭州百联奥莱"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028789",
       "people_name": "张娜",
@@ -2651,11 +2653,11 @@
       "validFrom": "2022-11-01",
       "validTo": "9999-12-31",
       "ou_code": "50005825",
-      "ou_name": "朗姿天津金元宝（解放路）",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿天津金元宝（解放路）"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028793",
       "people_name": "赵莲香",
@@ -2666,11 +2668,11 @@
       "validFrom": "2022-11-09",
       "validTo": "9999-12-31",
       "ou_code": "10000298",
-      "ou_name": "朗姿福州东百东街口店",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿福州东百东街口店"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028795",
       "people_name": "杨素仿",
@@ -2681,11 +2683,11 @@
       "validFrom": "2022-11-01",
       "validTo": "9999-12-31",
       "ou_code": "13000078",
-      "ou_name": "悦朗姿开发部",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "悦朗姿开发部"
     },
     {
+      "11": "99999999",
+      "12": "",
       "pa_event_name": "离职",
       "people_no": "81028802",
       "people_name": "齐丹丹",
@@ -2696,9 +2698,7 @@
       "validFrom": "2022-11-16",
       "validTo": "9999-12-31",
       "ou_code": "10000161",
-      "ou_name": "朗姿苏州美罗高新区店",
-      "position_code": "99999999",
-      "position_name": ""
+      "ou_name": "朗姿苏州美罗高新区店"
     }
   ]
 }
