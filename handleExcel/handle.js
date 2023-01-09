@@ -1,7 +1,7 @@
 /*
  * @Date: 2021-07-22 10:48:37
  * @LastEditors: zhangwen
- * @LastEditTime: 2022-12-16 16:17:17
+ * @LastEditTime: 2023-01-09 15:09:20
  * @FilePath: /DayCode/handleExcel/handle.js
  */
 
@@ -135,6 +135,27 @@ let fnCommon = {
     // return `${YYYY}-${MM}-${DD} ${hh}:${mm}:${ss}`;
     // return `${YYYY}-${MM}-${DD}`;
     return d;
+  },
+  writeXlsx: async function (p) {
+    /* let xlsxObj = [
+      {
+        name: "firstSheet",
+        data: [
+          [1, 2, 3],
+          [4, 5, 6],
+        ],
+      },
+      {
+        name: "secondSheet",
+        data: [
+          [7, 8, 9],
+          [10, 1, 12],
+        ],
+      },
+    ]; */
+    let xlsxObj = require("./data.json");
+    // console.log("xlsxObj:", xlsxObj);
+    fs.writeFileSync("./data.xlsx", xlsx.build(xlsxObj), "binary");
   },
 };
 
@@ -371,4 +392,9 @@ var handleXlsx4 = async function () {
   excel_data = JSON.parse(excel_data);
   // console.log("excel——data:", excel_data);
 };
-handleXlsx4();
+// handleXlsx4();
+
+var createXlsx = async function () {
+  fnCommon.writeXlsx();
+};
+createXlsx();
